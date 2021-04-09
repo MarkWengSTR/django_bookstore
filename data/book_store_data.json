@@ -1,0 +1,485 @@
+[{
+    "cashBalance": 4483.84,
+    "books": [{
+        "bookName": "Ruby: The Autobiography",
+        "price": 13.88
+      },
+      {
+        "bookName": "Ruby!",
+        "price": 10.64
+      },
+      {
+        "bookName": "Ruby, Ruby: A Murder Mystery",
+        "price": 12.45
+      },
+      {
+        "bookName": "Ruby: Unexpected Love... (ruby Trilogy)",
+        "price": 10.59
+      },
+      {
+        "bookName": "Where's Ruby? (max And Ruby)",
+        "price": 13.5
+      },
+      {
+        "bookName": "Ruby: Learn Ruby In 24 Hours Or Less - A Beginner's Guide To Learning Ruby Programming Now (ruby, Ruby Programming, Ruby Course)",
+        "price": 13.5
+      },
+      {
+        "bookName": "Refactoring: Ruby Edition: Ruby Edition (addison-wesley Professional Ruby Series)",
+        "price": 12.56
+      },
+      {
+        "bookName": "Mama Ruby (a Mama Ruby Novel)",
+        "price": 12.38
+      },
+      {
+        "bookName": "Ruby Red (the Ruby Red Trilogy)",
+        "price": 11.64
+      },
+      {
+        "bookName": "Metaprogramming Ruby 2: Program Like The Ruby Pros (facets Of Ruby)",
+        "price": 10.51
+      },
+      {
+        "bookName": "Ruby River",
+        "price": 10.2
+      },
+      {
+        "bookName": "Ruby Holler",
+        "price": 14.0
+      },
+      {
+        "bookName": "Ruby Phrasebook",
+        "price": 11.79
+      },
+      {
+        "bookName": "Sandy Ruby",
+        "price": 10.15
+      }
+    ],
+    "openingHours": "Mon, Fri 2:30 pm - 8 pm / Tues 11 am - 2 pm / Wed 1:15 pm - 3:15 am / Thurs 10 am - 3:15 am / Sat 5 am - 11:30 am / Sun 10:45 am - 5 pm",
+    "storeName": "Look Inna Book"
+  },
+  {
+    "cashBalance": 4882.81,
+    "books": [{
+        "bookName": "Elixir Saved (elixir Chronicles)",
+        "price": 13.57
+      },
+      {
+        "bookName": "Elixir",
+        "price": 10.15
+      },
+      {
+        "bookName": "Elixir: A History Of Water And Humankind",
+        "price": 10.25
+      },
+      {
+        "bookName": "Elixir: A Covenant Novella",
+        "price": 11.15
+      },
+      {
+        "bookName": "The Elixir",
+        "price": 10.25
+      },
+      {
+        "bookName": "Elixir Institutorum",
+        "price": 10.35
+      },
+      {
+        "bookName": "Elixir Cookbook",
+        "price": 12.34
+      },
+      {
+        "bookName": "Elixir Refused",
+        "price": 11.09
+      },
+      {
+        "bookName": "Devils Elixir",
+        "price": 12.0
+      },
+      {
+        "bookName": "Dr.excite/elixir/",
+        "price": 13.86
+      },
+      {
+        "bookName": "Jorge Galindo: Elixir",
+        "price": 10.25
+      },
+      {
+        "bookName": "Devoted (elixir)",
+        "price": 10.1
+      }
+    ],
+    "openingHours": "Mon, Wed 11:45 am - 4:45 pm / Tues 7:45 am - 2 am / Thurs 5:45 pm - 12 am / Fri, Sun 6 am - 9 pm / Sat 10:15 am - 9 pm",
+    "storeName": "The Book Basement"
+  },
+  {
+    "cashBalance": 5677.81,
+    "books": [{
+        "bookName": "Mastering Elixir",
+        "price": 11.57
+      },
+      {
+        "bookName": "Fatal Elixir",
+        "price": 9.15
+      },
+      {
+        "bookName": "Portafolio Elixir",
+        "price": 12.25
+      },
+      {
+        "bookName": "Learning Elixir",
+        "price": 6.15
+      },
+      {
+        "bookName": "Golden Elixir",
+        "price": 9.25
+      },
+      {
+        "bookName": "Poet's Elixir",
+        "price": 8.35
+      },
+      {
+        "bookName": "Elixir Cookbook",
+        "price": 9.34
+      },
+      {
+        "bookName": "Elixir Refused",
+        "price": 11.09
+      },
+      {
+        "bookName": "Devils Elixir",
+        "price": 8.0
+      },
+      {
+        "bookName": "Dr.excite/elixir/",
+        "price": 13.86
+      },
+      {
+        "bookName": "Jorge Galindo: Elixir",
+        "price": 9.25
+      },
+      {
+        "bookName": "Devoted (elixir)",
+        "price": 15.1
+      }
+    ],
+    "openingHours": "Mon 11:45 am - 4:45 pm / Tues 7:45 am - 2 pm / Thurs 5:45 pm - 12 am / Wed, Fri, Sun 7 am - 9 pm / Sat 10:15 am - 9 pm",
+    "storeName": "A Whole New World Bookstore"
+  },
+  {
+    "cashBalance": 3478.03,
+    "books": [{
+        "bookName": "Swift",
+        "price": 15.75
+      },
+      {
+        "bookName": "Cypseloides: Black Swift, Chestnut-collared Swift, White-chinned Swift, Great Dusky Swift, White-fronted Swift, Rothschild's Swift,",
+        "price": 10.35
+      },
+      {
+        "bookName": "Swift: Gulliver's Travels and Other Writings",
+        "price": 12.0
+      },
+      {
+        "bookName": "Swift: The Mystery of His Life and Love",
+        "price": 12.06
+      },
+      {
+        "bookName": "Pro Swift - Swift 4.1 Edition",
+        "price": 13.95
+      },
+      {
+        "bookName": "Functional Swift: Updated For Swift 4",
+        "price": 13.64
+      },
+      {
+        "bookName": "Beginning Xcode: Swift Edition: Swift Edition",
+        "price": 13.95
+      },
+      {
+        "bookName": "Swift Run (Swift Investigations Series #3)",
+        "price": 10.75
+      },
+      {
+        "bookName": "Swift Edge A Swift Investigation Mystery",
+        "price": 13.08
+      },
+      {
+        "bookName": "Swift Essentials",
+        "price": 13.26
+      }
+    ],
+    "openingHours": "Mon 1:45 pm - 3 pm / Tues 8:45 am - 2:15 am / Wed 6:45 am - 10:45 am / Thurs, Sat 5:45 am - 11:15 am / Fri 3:45 pm - 2:30 am / Sun 5 pm - 3:45 am",
+    "storeName": "Downtown Books"
+  },
+  {
+    "cashBalance": 960.2,
+    "books": [{
+        "bookName": "Ios 11 Programming Fundamentals With Swift: Swift, Xcode, And Cocoa Basics",
+        "price": 10.25
+      },
+      {
+        "bookName": "Ios 12 Programming Fundamentals With Swift: Swift, Xcode, And Cocoa Basics",
+        "price": 12.42
+      },
+      {
+        "bookName": "Ios 13 Programming Fundamentals With Swift: Swift, Xcode, And Cocoa Basics",
+        "price": 10.5
+      },
+      {
+        "bookName": "Beginner's Guide To Ios 12 App Development Using Swift 4: Xcode, Swift And App Design Fundamentals",
+        "price": 13.0
+      },
+      {
+        "bookName": "Beginning Xcode",
+        "price": 11.14
+      },
+      {
+        "bookName": "Xcode 3 Unleashed",
+        "price": 10.17
+      },
+      {
+        "bookName": "Xcode 4 Cookbook",
+        "price": 10.4
+      },
+      {
+        "bookName": "Learning Xcode 8",
+        "price": 10.75
+      },
+      {
+        "bookName": "Beginning Ios 13 & Swift App Development: Develop Ios Apps With Xcode 11, Swift 5, Core Ml, Arkit And More",
+        "price": 13.89
+      },
+      {
+        "bookName": "Mastering Ios 12 Programming: Build Professional-grade Ios Applications With Swift And Xcode 10, 3rd Edition",
+        "price": 10.24
+      },
+      {
+        "bookName": "Beginning Ios Storyboarding: Using Xcode",
+        "price": 12.3
+      },
+      {
+        "bookName": "Xcode 5 Start To Finish",
+        "price": 12.2
+      },
+      {
+        "bookName": "Ios 13 Programming For Beginners: Get Started With Building Ios Apps With Swift 5 And Xcode 11, 4th Edition",
+        "price": 12.82
+      },
+      {
+        "bookName": "Taylor Swift",
+        "price": 10.05
+      }
+    ],
+    "openingHours": "Mon 5 pm - 10:30 pm / Tues, Sat 5 pm - 6:45 pm / Wed - Thurs 3:15 pm - 3:45 am / Fri 9:15 am - 10:45 am / Sun 10:45 am - 3:45 pm",
+    "storeName": "Uptown Books"
+  },
+  {
+    "cashBalance": 4841.8,
+    "books": [{
+        "bookName": "Ruby For Rails: Ruby Techniques For Rails Developers",
+        "price": 10.75
+      },
+      {
+        "bookName": "Rails Antipatterns: Best Practice Ruby On Rails Refactoring",
+        "price": 11.16
+      },
+      {
+        "bookName": "Ruby On Rails Video: Learn Rails By Example",
+        "price": 10.29
+      },
+      {
+        "bookName": "Ruby On Rails Essential Training",
+        "price": 11.58
+      },
+      {
+        "bookName": "Ruby Beginner's Crash Course: Ruby For Beginner's Guide To Ruby Programming, Ruby On Rails & Rails Programming (ruby, Operating Systems, Programming) (volume 1)",
+        "price": 10.26
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails",
+        "price": 11.25
+      },
+      {
+        "bookName": "Head First Rails: A Learner's Companion To Ruby On Rails",
+        "price": 10.09
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails (2nd Edition) (addison-wesley Professional Ruby)",
+        "price": 12.79
+      },
+      {
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "price": 12.53
+      }
+    ],
+    "openingHours": "Mon - Wed 11 am - 9 pm / Thurs 6 am - 9 pm / Fri 7 pm - 7 am / Sat 2:45 pm - 1:30 am / Sun 7 am - 4:15 pm",
+    "storeName": "Turn the Page"
+  },
+  {
+    "cashBalance": 3211.97,
+    "books": [{
+        "bookName": "The Phenix: A Collection Of Old And Rare Fragments (1835)",
+        "price": 11.51
+      },
+      {
+        "bookName": "Phenix: Roman",
+        "price": 10.94
+      },
+      {
+        "bookName": "Phenix N40 Fantasy",
+        "price": 13.94
+      },
+      {
+        "bookName": "Le Phenix Exultant",
+        "price": 11.25
+      },
+      {
+        "bookName": "Forêts (inactif- Phenix)",
+        "price": 11.97
+      },
+      {
+        "bookName": "Tel Un Phenix",
+        "price": 10.06
+      },
+      {
+        "bookName": "Le Tombeau Du Phenix",
+        "price": 11.48
+      }
+    ],
+    "openingHours": "Mon 6 am - 8:30 pm / Tues - Wed 6:45 am - 3 pm / Thurs 6:15 am - 8:30 am / Fri 4 pm - 10:15 pm / Sat 1:30 pm - 11:45 pm / Sun 6:30 am - 8:15 am",
+    "storeName": "Author Attic"
+  },
+  {
+    "cashBalance": 4260.93,
+    "books": [{
+        "bookName": "Go For Gin",
+        "price": 10.5
+      },
+      {
+        "bookName": "Gin & Gin Drinks (Quamut)",
+        "price": 12.44
+      },
+      {
+        "bookName": "Gin Rummy: Gin Lovers Playing Cards",
+        "price": 10.55
+      },
+      {
+        "bookName": "Sister Gin",
+        "price": 10.45
+      },
+      {
+        "bookName": "Gin Wigmore: Gin Wigmore Albums, Gin Wigmore Songs, Holy Smoke, Brother, Hey Ho, Oh My, I Do, Extended Play",
+        "price": 10.6
+      }
+    ],
+    "openingHours": "Mon 4:30 pm - 11:15 pm / Tues, Sat 3:30 pm - 5 pm / Wed 5:15 am - 9:30 pm / Thurs 1 pm - 2:15 pm / Fri 6:45 am - 7:45 am / Sun 8:30 am - 2 am",
+    "storeName": "Undercover Books"
+  },
+  {
+    "cashBalance": 416.69,
+    "books": [{
+        "bookName": "Cloud Native Programming With Golang",
+        "price": 10.75
+      },
+      {
+        "bookName": "Hands-on Software Architecture With Golang",
+        "price": 13.0
+      },
+      {
+        "bookName": "Learn Data Structures And Algorithms With Golang",
+        "price": 11.1
+      },
+      {
+        "bookName": "Sams Teach Yourself Go In 24 Hours: Next Generation Systems Programming With Golang: Next Generation Systems Programming With Golang",
+        "price": 10.15
+      },
+      {
+        "bookName": "Hands-on Software Architecture With Golang: Design And Architect Highly Scalable And Robust Applications Using Go",
+        "price": 10.1
+      },
+      {
+        "bookName": "Mastering Go: Create Golang Production Applications Using Network Libraries, Concurrency, And Advanced Go Data Structures",
+        "price": 12.98
+      },
+      {
+        "bookName": "Cloud Native Programming With Golang: Develop Microservice-based High Performance Web Apps For The Cloud With Go",
+        "price": 11.85
+      },
+      {
+        "bookName": "Building Restful Web Services With Go: Learn How To Build Powerful Restful Apis With Golang That Scale Gracefully",
+        "price": 16.0
+      },
+      {
+        "bookName": "Computer Programming Python, Machine Learning, Javascript Swift, Golang: A Step By Step How To Guide For Beginners To Advanced From Baby To Bad Ass",
+        "price": 10.25
+      },
+      {
+        "bookName": "Learn Data Structures And Algorithms With Golang: Level Up Your Go Programming Skills To Develop Faster And More Efficient Code",
+        "price": 10.95
+      },
+      {
+        "bookName": "Go Standard Library Cookbook: Over 120 Specific Ways To Make Full Use Of The Standard Library Components In Golang",
+        "price": 11.97
+      }
+    ],
+    "openingHours": "Mon 10:30 am - 3:15 pm / Tues - Wed 7:15 am - 12:30 am / Thurs 6:45 am - 12 am / Fri 5 am - 11:30 pm / Sat - Sun 5:30 am - 9:45 am",
+    "storeName": "Pick-a-Book"
+  },
+  {
+    "cashBalance": 940.01,
+    "books": [{
+        "bookName": "Framework Science",
+        "price": 12.47
+      },
+      {
+        "bookName": "Framework : A Developer's Handbook with Framework I",
+        "price": 10.36
+      },
+      {
+        "bookName": "Strategic Framework",
+        "price": 10.2
+      },
+      {
+        "bookName": "Net Framework",
+        "price": 10.63
+      },
+      {
+        "bookName": "Stripes (framework)",
+        "price": 10.56
+      },
+      {
+        "bookName": "Leonardi Framework",
+        "price": 12.54
+      },
+      {
+        "bookName": "Bistro Framework",
+        "price": 11.15
+      },
+      {
+        "bookName": "Science Framework",
+        "price": 12.21
+      },
+      {
+        "bookName": "Mogul Framework",
+        "price": 11.4
+      },
+      {
+        "bookName": "Framework Applications",
+        "price": 10.51
+      },
+      {
+        "bookName": "Javanet-framework",
+        "price": 10.3
+      },
+      {
+        "bookName": "Net Framework: Mono, Visual T Sharp, C Sharp, Framework .net, Microsoft .net, Visual Basic .net, Visual Studio",
+        "price": 11.84
+      }
+    ],
+    "openingHours": "Mon 5 pm - 2 am / Tues - Wed 9:30 am - 8 pm / Thurs 8:15 am - 11 pm / Fri 5 pm - 10:15 pm / Sat 5:30 am - 5 pm / Sun 11:45 am - 6 pm",
+    "storeName": "Bookland"
+  }
+]

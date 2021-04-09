@@ -1,0 +1,1151 @@
+[{
+    "cashBalance": 700.7,
+    "id": 0,
+    "name": "Edith Johnson",
+    "purchaseHistory": [{
+        "bookName": "Ruby: The Autobiography",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 13.88,
+        "transactionDate": "02/10/2020 04:09 AM"
+      },
+      {
+        "bookName": "Ruby, Ruby: A Murder Mystery",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 12.45,
+        "transactionDate": "04/03/2020 01:56 PM"
+      },
+      {
+        "bookName": "Where's Ruby? (max And Ruby)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 13.5,
+        "transactionDate": "02/29/2020 12:13 AM"
+      },
+      {
+        "bookName": "Cypseloides: Black Swift, Chestnut-collared Swift, White-chinned Swift, Great Dusky Swift, White-fronted Swift, Rothschild's Swift,",
+        "storeName": "Downtown Books",
+        "transactionAmount": 10.35,
+        "transactionDate": "05/13/2018 06:02 PM"
+      },
+      {
+        "bookName": "Beginning Xcode: Swift Edition: Swift Edition",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.95,
+        "transactionDate": "11/16/2018 06:49 AM"
+      },
+      {
+        "bookName": "Swift Run (Swift Investigations Series #3)",
+        "storeName": "Downtown Books",
+        "transactionAmount": 10.75,
+        "transactionDate": "09/20/2019 10:18 PM"
+      },
+      {
+        "bookName": "Swift Essentials",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.26,
+        "transactionDate": "04/20/2019 11:20 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 237.61,
+    "id": 1,
+    "name": "Edward Gonzalez",
+    "purchaseHistory": [{
+        "bookName": "Pro Swift - Swift 4.1 Edition",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.95,
+        "transactionDate": "10/28/2019 04:38 PM"
+      },
+      {
+        "bookName": "Swift Run (Swift Investigations Series #3)",
+        "storeName": "Downtown Books",
+        "transactionAmount": 10.75,
+        "transactionDate": "06/29/2018 01:08 PM"
+      },
+      {
+        "bookName": "Swift",
+        "storeName": "Downtown Books",
+        "transactionAmount": 15.75,
+        "transactionDate": "09/08/2019 11:11 AM"
+      },
+      {
+        "bookName": "Taylor Swift",
+        "storeName": "Uptown Books",
+        "transactionAmount": 10.05,
+        "transactionDate": "02/16/2020 09:31 AM"
+      },
+      {
+        "bookName": "Ios 13 Programming For Beginners: Get Started With Building Ios Apps With Swift 5 And Xcode 11, 4th Edition",
+        "storeName": "Uptown Books",
+        "transactionAmount": 12.82,
+        "transactionDate": "06/21/2018 07:57 PM"
+      },
+      {
+        "bookName": "Mastering Ios 12 Programming: Build Professional-grade Ios Applications With Swift And Xcode 10, 3rd Edition",
+        "storeName": "Uptown Books",
+        "transactionAmount": 10.24,
+        "transactionDate": "10/21/2018 07:38 PM"
+      },
+      {
+        "bookName": "Ruby River",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 10.2,
+        "transactionDate": "04/16/2019 06:46 AM"
+      },
+      {
+        "bookName": "Ruby Red (the Ruby Red Trilogy)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 11.64,
+        "transactionDate": "02/24/2020 07:52 PM"
+      },
+      {
+        "bookName": "Ruby: Learn Ruby In 24 Hours Or Less - A Beginner's Guide To Learning Ruby Programming Now (ruby, Ruby Programming, Ruby Course)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 13.5,
+        "transactionDate": "07/29/2018 07:25 AM"
+      },
+      {
+        "bookName": "Sandy Ruby",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 10.15,
+        "transactionDate": "05/18/2018 10:39 AM"
+      },
+      {
+        "bookName": "Ruby, Ruby: A Murder Mystery",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 12.45,
+        "transactionDate": "12/12/2019 07:34 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 277.18,
+    "id": 3,
+    "name": "Heather Edwards",
+    "purchaseHistory": [{
+        "bookName": "Ruby River",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 10.2,
+        "transactionDate": "12/11/2018 05:33 PM"
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.25,
+        "transactionDate": "02/19/2019 04:20 AM"
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails (2nd Edition) (addison-wesley Professional Ruby)",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.79,
+        "transactionDate": "09/19/2018 07:41 PM"
+      },
+      {
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "06/25/2018 11:49 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 997.73,
+    "id": 4,
+    "name": "Christopher Deisher",
+    "purchaseHistory": [{
+      "bookName": "Ruby For Rails: Ruby Techniques For Rails Developers",
+      "storeName": "Turn the Page",
+      "transactionAmount": 10.75,
+      "transactionDate": "04/29/2018 08:04 PM"
+    }]
+  },
+  {
+    "cashBalance": 610.67,
+    "id": 5,
+    "name": "Kasha Borda",
+    "purchaseHistory": [{
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "02/23/2018 02:22 AM"
+      },
+      {
+        "bookName": "Le Phenix Exultant",
+        "storeName": "Author Attic",
+        "transactionAmount": 11.25,
+        "transactionDate": "02/06/2018 10:50 PM"
+      },
+      {
+        "bookName": "Tel Un Phenix",
+        "storeName": "Author Attic",
+        "transactionAmount": 10.06,
+        "transactionDate": "07/22/2019 01:01 AM"
+      },
+      {
+        "bookName": "Le Tombeau Du Phenix",
+        "storeName": "Author Attic",
+        "transactionAmount": 11.48,
+        "transactionDate": "12/14/2018 04:47 PM"
+      },
+      {
+        "bookName": "Sister Gin",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.45,
+        "transactionDate": "05/18/2019 04:39 AM"
+      },
+      {
+        "bookName": "Go For Gin",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.5,
+        "transactionDate": "04/01/2018 07:56 AM"
+      },
+      {
+        "bookName": "Gin Rummy: Gin Lovers Playing Cards",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.55,
+        "transactionDate": "11/15/2018 11:52 PM"
+      },
+      {
+        "bookName": "Mastering Go: Create Golang Production Applications Using Network Libraries, Concurrency, And Advanced Go Data Structures",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 12.98,
+        "transactionDate": "01/30/2019 10:29 PM"
+      },
+      {
+        "bookName": "Cloud Native Programming With Golang: Develop Microservice-based High Performance Web Apps For The Cloud With Go",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 11.85,
+        "transactionDate": "01/08/2018 02:17 PM"
+      },
+      {
+        "bookName": "Learn Data Structures And Algorithms With Golang: Level Up Your Go Programming Skills To Develop Faster And More Efficient Code",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.95,
+        "transactionDate": "01/22/2020 04:32 PM"
+      },
+      {
+        "bookName": "Stripes (framework)",
+        "storeName": "Bookland",
+        "transactionAmount": 10.56,
+        "transactionDate": "11/02/2019 06:48 PM"
+      },
+      {
+        "bookName": "Leonardi Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 12.54,
+        "transactionDate": "05/02/2020 05:06 PM"
+      },
+      {
+        "bookName": "Science Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 12.21,
+        "transactionDate": "01/02/2018 11:58 AM"
+      },
+      {
+        "bookName": "Ruby River",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 8.0,
+        "transactionDate": "07/18/2018 04:15 PM"
+      },
+      {
+        "bookName": "Ruby Holler",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 13.86,
+        "transactionDate": "02/02/2020 02:59 AM"
+      },
+      {
+        "bookName": "Ruby Phrasebook",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 9.25,
+        "transactionDate": "06/28/2018 05:22 PM"
+      },
+      {
+        "bookName": "Sandy Ruby",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 9.34,
+        "transactionDate": "08/14/2018 11:06 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 863.35,
+    "id": 6,
+    "name": "Coy Mincks",
+    "purchaseHistory": [{
+        "bookName": "Ruby On Rails Essential Training",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.58, "transactionDate": "02/16/2020 01:42 AM"
+      },
+      {
+        "bookName": "Ruby On Rails Video: Learn Rails By Example",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.29,
+        "transactionDate": "03/26/2019 10:13 AM"
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.25,
+        "transactionDate": "06/25/2018 05:43 AM"
+      },
+      {
+        "bookName": "Building Restful Web Services With Go: Learn How To Build Powerful Restful Apis With Golang That Scale Gracefully",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 16.0,
+        "transactionDate": "04/25/2020 12:17 AM"
+      },
+      {
+        "bookName": "Javanet-framework",
+        "storeName": "Bookland",
+        "transactionAmount": 10.3,
+        "transactionDate": "01/31/2019 01:33 AM"
+      },
+      {
+        "bookName": "Net Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 10.63,
+        "transactionDate": "02/11/2020 04:35 AM"
+      },
+      {
+        "bookName": "Framework Science",
+        "storeName": "Bookland",
+        "transactionAmount": 12.47,
+        "transactionDate": "05/05/2018 06:37 PM"
+      },
+      {
+        "bookName": "Forêts (inactif- Phenix)",
+        "storeName": "Author Attic",
+        "transactionAmount": 11.97,
+        "transactionDate": "12/21/2019 05:54 AM"
+      },
+      {
+        "bookName": "Phenix N40 Fantasy",
+        "storeName": "Author Attic",
+        "transactionAmount": 13.94,
+        "transactionDate": "12/16/2018 05:54 PM"
+      },
+      {
+        "bookName": "Phenix: Roman",
+        "storeName": "Author Attic",
+        "transactionAmount": 10.94,
+        "transactionDate": "01/30/2020 10:44 PM"
+      },
+      {
+        "bookName": "Xcode 5 Start To Finish",
+        "storeName": "Uptown Books",
+        "transactionAmount": 11.25,
+        "transactionDate": "04/07/2020 11:19 AM"
+      },
+      {
+        "bookName": "Xcode 3 Unleashed",
+        "storeName": "Uptown Books",
+        "transactionAmount": 13.1,
+        "transactionDate": "04/27/2019 06:59 AM"
+      },
+      {
+        "bookName": "Learning Xcode 8",
+        "storeName": "Uptown Books",
+        "transactionAmount": 11.5,
+        "transactionDate": "05/27/2018 09:30 AM"
+      },
+      {
+        "bookName": "Swift: Gulliver's Travels and Other Writings",
+        "storeName": "Downtown Books",
+        "transactionAmount": 12.0,
+        "transactionDate": "03/14/2020 03:08 PM"
+      },
+      {
+        "bookName": "Swift Edge A Swift Investigation Mystery",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.08,
+        "transactionDate": "02/11/2020 11:49 AM"
+      },
+      {
+        "bookName": "Swift Essentials",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.26,
+        "transactionDate": "02/10/2018 07:44 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 629.2,
+    "id": 7,
+    "name": "Andrew Bidlack",
+    "purchaseHistory": [{
+        "bookName": "Metaprogramming Ruby 2: Program Like The Ruby Pros (facets Of Ruby)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 10.51,
+        "transactionDate": "03/03/2020 11:01 AM"
+      },
+      {
+        "bookName": "Ruby River",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 10.2,
+        "transactionDate": "02/04/2019 04:02 PM"
+      },
+      {
+        "bookName": "Rails Antipatterns: Best Practice Ruby On Rails Refactoring",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.16,
+        "transactionDate": "07/24/2019 12:20 PM"
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.25,
+        "transactionDate": "02/12/2020 07:18 AM"
+      },
+      {
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "04/20/2019 08:57 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 144.12,
+    "id": 8,
+    "name": "Gary Coffin",
+    "purchaseHistory": [{
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "01/09/2020 05:59 PM"
+      },
+      {
+        "bookName": "Head First Rails: A Learner's Companion To Ruby On Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.09,
+        "transactionDate": "10/17/2019 04:28 AM"
+      },
+      {
+        "bookName": "Ruby On Rails Essential Training",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.58,
+        "transactionDate": "12/15/2018 12:53 PM"
+      },
+      {
+        "bookName": "Sister Gin",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.45,
+        "transactionDate": "04/22/2019 03:39 AM"
+      },
+      {
+        "bookName": "Gin Wigmore: Gin Wigmore Albums, Gin Wigmore Songs, Holy Smoke, Brother, Hey Ho, Oh My, I Do, Extended Play",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.6,
+        "transactionDate": "06/16/2018 06:34 PM"
+      },
+      {
+        "bookName": "Go For Gin",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.5,
+        "transactionDate": "09/11/2019 08:14 AM"
+      },
+      {
+        "bookName": "Go Standard Library Cookbook: Over 120 Specific Ways To Make Full Use Of The Standard Library Components In Golang",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 11.97,
+        "transactionDate": "08/03/2018 09:37 AM"
+      },
+      {
+        "bookName": "Learn Data Structures And Algorithms With Golang: Level Up Your Go Programming Skills To Develop Faster And More Efficient Code",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.95,
+        "transactionDate": "12/15/2019 08:21 AM"
+      },
+      {
+        "bookName": "Sams Teach Yourself Go In 24 Hours: Next Generation Systems Programming With Golang: Next Generation Systems Programming With Golang",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.15,
+        "transactionDate": "12/30/2019 08:51 AM"
+      },
+      {
+        "bookName": "Bistro Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 11.15,
+        "transactionDate": "03/31/2019 04:11 AM"
+      },
+      {
+        "bookName": "Science Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 12.21,
+        "transactionDate": "08/22/2018 06:08 AM"
+      },
+      {
+        "bookName": "Framework Science",
+        "storeName": "Bookland",
+        "transactionAmount": 12.47,
+        "transactionDate": "10/15/2018 06:47 AM"
+      },
+      {
+        "bookName": "Gin & Gin Drinks (Quamut)",
+        "storeName": "Undercover Books",
+        "transactionAmount": 12.44,
+        "transactionDate": "07/05/2019 07:06 PM"
+      },
+      {
+        "bookName": "Gin Rummy: Gin Lovers Playing Cards",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.55,
+        "transactionDate": "06/17/2019 05:13 AM"
+      },
+      {
+        "bookName": "Phenix N40 Fantasy",
+        "storeName": "Author Attic",
+        "transactionAmount": 13.94,
+        "transactionDate": "06/22/2018 08:45 PM"
+      },
+      {
+        "bookName": "Forêts (inactif- Phenix)",
+        "storeName": "Author Attic",
+        "transactionAmount": 11.97,
+        "transactionDate": "05/18/2018 02:55 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 21.29,
+    "id": 9,
+    "name": "Edna Johnson",
+    "purchaseHistory": [{
+        "bookName": "Ruby Beginner's Crash Course: Ruby For Beginner's Guide To Ruby Programming, Ruby On Rails & Rails Programming (ruby, Operating Systems, Programming) (volume 1)",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.26,
+        "transactionDate": "12/15/2018 03:34 AM"
+      },
+      {
+        "bookName": "Head First Rails: A Learner's Companion To Ruby On Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.09,
+        "transactionDate": "07/27/2018 11:28 AM"
+      },
+      {
+        "bookName": "Ruby For Rails: Ruby Techniques For Rails Developers",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.75,
+        "transactionDate": "08/29/2018 11:54 PM"
+      },
+      {
+        "bookName": "Metaprogramming Ruby 2: Program Like The Ruby Pros (facets Of Ruby)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 10.51,
+        "transactionDate": "08/01/2019 12:29 AM"
+      },
+      {
+        "bookName": "Where's Ruby? (max And Ruby)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 13.5,
+        "transactionDate": "04/09/2019 03:47 AM"
+      },
+      {
+        "bookName": "Elixir Refused",
+        "storeName": "The Book Basement",
+        "transactionAmount": 11.66,
+        "transactionDate": "05/21/2019 04:03 AM"
+      },
+      {
+        "bookName": "Devils Elixir",
+        "storeName": "The Book Basement",
+        "transactionAmount": 10.1,
+        "transactionDate": "03/14/2019 03:21 AM"
+      },
+      {
+        "bookName": "Dr.excite/elixir/",
+        "storeName": "The Book Basement",
+        "transactionAmount": 15.5,
+        "transactionDate": "12/17/2018 03:38 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 776.89,
+    "id": 10,
+    "name": "Judy Spease",
+    "purchaseHistory": [{
+        "bookName": "Mastering Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 11.57,
+        "transactionDate": "12/06/2019 11:47 AM"
+      },
+      {
+        "bookName": "Fatal Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 9.15,
+        "transactionDate": "07/05/2018 04:17 PM"
+      },
+      {
+        "bookName": "Portafolio Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 12.25,
+        "transactionDate": "10/09/2018 11:42 AM"
+      },
+      {
+        "bookName": "Learning Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 6.15,
+        "transactionDate": "06/29/2019 01:13 PM"
+      },
+      {
+        "bookName": "Golden Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 9.25,
+        "transactionDate": "09/23/2018 10:36 AM"
+      },
+      {
+        "bookName": "Poet's Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 8.35,
+        "transactionDate": "12/13/2019 06:12 AM"
+      },
+      {
+        "bookName": "Elixir Cookbook",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 9.34,
+        "transactionDate": "06/06/2018 04:10 PM"
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.25,
+        "transactionDate": "07/01/2018 12:43 PM"
+      },
+      {
+        "bookName": "Ruby On Rails Video: Learn Rails By Example",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.29,
+        "transactionDate": "02/09/2020 03:46 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 638.26,
+    "id": 11,
+    "name": "Kirsten Bostic",
+    "purchaseHistory": []
+  },
+  {
+    "cashBalance": 304.79,
+    "id": 12,
+    "name": "Alma Meadows",
+    "purchaseHistory": [{
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "01/18/2018 06:09 AM"
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.25,
+        "transactionDate": "02/04/2018 06:41 AM"
+      },
+      {
+        "bookName": "Rails Antipatterns: Best Practice Ruby On Rails Refactoring",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.16,
+        "transactionDate": "01/23/2019 12:41 PM"
+      },
+      {
+        "bookName": "Forêts (inactif- Phenix)",
+        "storeName": "Author Attic",
+        "transactionAmount": 11.97,
+        "transactionDate": "06/12/2019 02:24 AM"
+      },
+      {
+        "bookName": "Le Phenix Exultant",
+        "storeName": "Author Attic",
+        "transactionAmount": 11.25,
+        "transactionDate": "05/23/2018 02:56 AM"
+      },
+      {
+        "bookName": "Sister Gin",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.45,
+        "transactionDate": "05/23/2019 08:01 PM"
+      },
+      {
+        "bookName": "Gin Wigmore: Gin Wigmore Albums, Gin Wigmore Songs, Holy Smoke, Brother, Hey Ho, Oh My, I Do, Extended Play",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.6,
+        "transactionDate": "03/27/2019 09:21 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 890.52,
+    "id": 13,
+    "name": "Mark Gregoire",
+    "purchaseHistory": [{
+        "bookName": "Computer Programming Python, Machine Learning, Javascript Swift, Golang: A Step By Step How To Guide For Beginners To Advanced From Baby To Bad Ass",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.25,
+        "transactionDate": "09/29/2019 10:01 PM"
+      },
+      {
+        "bookName": "Building Restful Web Services With Go: Learn How To Build Powerful Restful Apis With Golang That Scale Gracefully",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 16.0,
+        "transactionDate": "12/31/2018 06:49 AM"
+      },
+      {
+        "bookName": "Mastering Go: Create Golang Production Applications Using Network Libraries, Concurrency, And Advanced Go Data Structures",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 12.98,
+        "transactionDate": "05/26/2018 04:06 PM"
+      },
+      {
+        "bookName": "Framework : A Developer's Handbook with Framework I",
+        "storeName": "Bookland",
+        "transactionAmount": 10.36,
+        "transactionDate": "02/03/2019 08:55 PM"
+      },
+      {
+        "bookName": "Strategic Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 10.2,
+        "transactionDate": "06/12/2019 02:17 PM"
+      },
+      {
+        "bookName": "Net Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 10.63,
+        "transactionDate": "05/18/2018 08:13 PM"
+      },
+      {
+        "bookName": "Beginning Ios Storyboarding: Using Xcode",
+        "storeName": "Uptown Books",
+        "transactionAmount": 12.3,
+        "transactionDate": "04/24/2020 09:29 AM"
+      },
+      {
+        "bookName": "Xcode 5 Start To Finish",
+        "storeName": "Uptown Books",
+        "transactionAmount": 12.2,
+        "transactionDate": "06/20/2018 05:58 AM"
+      },
+      {
+        "bookName": "Ios 13 Programming For Beginners: Get Started With Building Ios Apps With Swift 5 And Xcode 11, 4th Edition",
+        "storeName": "Uptown Books",
+        "transactionAmount": 12.82,
+        "transactionDate": "01/05/2018 01:52 PM"
+      },
+      {
+        "bookName": "Swift Run (Swift Investigations Series #3)",
+        "storeName": "Downtown Books",
+        "transactionAmount": 12.28,
+        "transactionDate": "09/12/2018 08:11 PM"
+      },
+      {
+        "bookName": "Pro Swift - Swift 4.1 Edition",
+        "storeName": "Downtown Books",
+        "transactionAmount": 11.68,
+        "transactionDate": "07/11/2019 10:13 PM"
+      },
+      {
+        "bookName": "Devoted (elixir)",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 15.1,
+        "transactionDate": "10/22/2019 05:52 PM"
+      },
+      {
+        "bookName": "Jorge Galindo: Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 9.25,
+        "transactionDate": "07/12/2018 05:34 AM"
+      },
+      {
+        "bookName": "Elixir Institutorum",
+        "storeName": "The Book Basement",
+        "transactionAmount": 10.35,
+        "transactionDate": "01/23/2018 07:05 AM"
+      },
+      {
+        "bookName": "Elixir: A Covenant Novella",
+        "storeName": "The Book Basement",
+        "transactionAmount": 11.15,
+        "transactionDate": "10/08/2019 09:58 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 257.36,
+    "id": 14,
+    "name": "Phyllis Tennon",
+    "purchaseHistory": [{
+        "bookName": "Functional Swift: Updated For Swift 4",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.64,
+        "transactionDate": "03/06/2018 06:24 AM"
+      },
+      {
+        "bookName": "Pro Swift - Swift 4.1 Edition",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.95,
+        "transactionDate": "11/29/2018 08:53 AM"
+      },
+      {
+        "bookName": "Swift: The Mystery of His Life and Love",
+        "storeName": "Downtown Books",
+        "transactionAmount": 12.06,
+        "transactionDate": "12/22/2018 12:15 AM"
+      },
+      {
+        "bookName": "Beginning Xcode",
+        "storeName": "Uptown Books",
+        "transactionAmount": 11.14,
+        "transactionDate": "06/12/2018 12:05 AM"
+      },
+      {
+        "bookName": "Ios 13 Programming Fundamentals With Swift: Swift, Xcode, And Cocoa Basics",
+        "storeName": "Uptown Books",
+        "transactionAmount": 10.5,
+        "transactionDate": "08/14/2019 02:31 AM"
+      },
+      {
+        "bookName": "Beginner's Guide To Ios 12 App Development Using Swift 4: Xcode, Swift And App Design Fundamentals",
+        "storeName": "Uptown Books",
+        "transactionAmount": 13.0,
+        "transactionDate": "06/22/2019 04:07 PM"
+      },
+      {
+        "bookName": "Rails Antipatterns: Best Practice Ruby On Rails Refactoring",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.16,
+        "transactionDate": "05/02/2020 03:47 PM"
+      },
+      {
+        "bookName": "Ruby Beginner's Crash Course: Ruby For Beginner's Guide To Ruby Programming, Ruby On Rails & Rails Programming (ruby, Operating Systems, Programming) (volume 1)",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.26,
+        "transactionDate": "11/18/2019 10:43 PM"
+      },
+      {
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "01/01/2020 03:25 PM"
+      },
+      {
+        "bookName": "Gin Wigmore: Gin Wigmore Albums, Gin Wigmore Songs, Holy Smoke, Brother, Hey Ho, Oh My, I Do, Extended Play",
+        "storeName": "Undercover Books",
+        "transactionAmount": 10.6,
+        "transactionDate": "01/06/2018 04:50 PM"
+      },
+      {
+        "bookName": "Gin & Gin Drinks (Quamut)",
+        "storeName": "Undercover Books",
+        "transactionAmount": 12.44,
+        "transactionDate": "06/23/2018 05:55 PM"
+      },
+      {
+        "bookName": "Hands-on Software Architecture With Golang: Design And Architect Highly Scalable And Robust Applications Using Go",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.1,
+        "transactionDate": "10/22/2019 05:46 PM"
+      },
+      {
+        "bookName": "Computer Programming Python, Machine Learning, Javascript Swift, Golang: A Step By Step How To Guide For Beginners To Advanced From Baby To Bad Ass",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.25,
+        "transactionDate": "05/29/2018 08:51 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 60.98,
+    "id": 15,
+    "name": "Adele Smith",
+    "purchaseHistory": [{
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "05/01/2018 10:30 AM"
+      },
+      {
+        "bookName": "Ruby On Rails Essential Training",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.58,
+        "transactionDate": "05/29/2018 12:39 PM"
+      },
+      {
+        "bookName": "Ruby For Rails: Ruby Techniques For Rails Developers",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.75,
+        "transactionDate": "05/31/2018 08:48 AM"
+      },
+      {
+        "bookName": "Tel Un Phenix",
+        "storeName": "Author Attic",
+        "transactionAmount": 10.06,
+        "transactionDate": "05/18/2020 09:39 AM"
+      },
+      {
+        "bookName": "Forêts (inactif- Phenix)",
+        "storeName": "Author Attic",
+        "transactionAmount": 11.97,
+        "transactionDate": "11/03/2019 02:09 PM"
+      },
+      {
+        "bookName": "Phenix N40 Fantasy",
+        "storeName": "Author Attic",
+        "transactionAmount": 13.94,
+        "transactionDate": "03/28/2018 11:46 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 75.23,
+    "id": 16,
+    "name": "Susan Maggio",
+    "purchaseHistory": [{
+        "bookName": "Hacking With Ruby: Ruby And Rails For The Real World",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.53,
+        "transactionDate": "08/09/2019 08:12 AM"
+      },
+      {
+        "bookName": "Head First Rails: A Learner's Companion To Ruby On Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.09,
+        "transactionDate": "12/04/2018 08:13 PM"
+      },
+      {
+        "bookName": "Ruby On Rails Essential Training",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.58,
+        "transactionDate": "07/24/2019 02:37 PM"
+      },
+      {
+        "bookName": "Computer Programming Python, Machine Learning, Javascript Swift, Golang: A Step By Step How To Guide For Beginners To Advanced From Baby To Bad Ass",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.25,
+        "transactionDate": "03/30/2020 09:20 AM"
+      },
+      {
+        "bookName": "Hands-on Software Architecture With Golang",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 13.0,
+        "transactionDate": "01/21/2019 01:41 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 55.16,
+    "id": 17,
+    "name": "Gloria Kramer",
+    "purchaseHistory": [{
+        "bookName": "Ruby For Rails: Ruby Techniques For Rails Developers",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.75,
+        "transactionDate": "07/12/2018 02:58 PM"
+      },
+      {
+        "bookName": "Rails Antipatterns: Best Practice Ruby On Rails Refactoring",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.16,
+        "transactionDate": "09/28/2019 04:26 PM"
+      },
+      {
+        "bookName": "Ruby Beginner's Crash Course: Ruby For Beginner's Guide To Ruby Programming, Ruby On Rails & Rails Programming (ruby, Operating Systems, Programming) (volume 1)",
+        "storeName": "Turn the Page",
+        "transactionAmount": 10.26,
+        "transactionDate": "05/24/2020 06:42 PM"
+      },
+      {
+        "bookName": "Ruby On Rails Tutorial: Learn Web Development With Rails (2nd Edition) (addison-wesley Professional Ruby)",
+        "storeName": "Turn the Page",
+        "transactionAmount": 12.79,
+        "transactionDate": "08/18/2019 08:08 PM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 812.36,
+    "id": 18,
+    "name": "Darren Pedigo",
+    "purchaseHistory": [{
+        "bookName": "Sams Teach Yourself Go In 24 Hours: Next Generation Systems Programming With Golang: Next Generation Systems Programming With Golang",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.15,
+        "transactionDate": "01/23/2020 12:54 PM"
+      },
+      {
+        "bookName": "Hands-on Software Architecture With Golang: Design And Architect Highly Scalable And Robust Applications Using Go",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 10.1,
+        "transactionDate": "04/15/2018 04:42 PM"
+      },
+      {
+        "bookName": "Cloud Native Programming With Golang: Develop Microservice-based High Performance Web Apps For The Cloud With Go",
+        "storeName": "Pick-a-Book",
+        "transactionAmount": 11.85,
+        "transactionDate": "10/16/2018 07:22 PM"
+      },
+      {
+        "bookName": "Net Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 10.63,
+        "transactionDate": "03/29/2020 12:29 AM"
+      },
+      {
+        "bookName": "Stripes (framework)",
+        "storeName": "Bookland",
+        "transactionAmount": 10.56,
+        "transactionDate": "03/23/2019 04:52 AM"
+      },
+      {
+        "bookName": "Leonardi Framework",
+        "storeName": "Bookland",
+        "transactionAmount": 12.54,
+        "transactionDate": "05/25/2019 05:13 AM"
+      },
+      {
+        "bookName": "Ruby On Rails Essential Training",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.28,
+        "transactionDate": "04/12/2018 04:05 AM"
+      },
+      {
+        "bookName": "Ruby Beginner's Crash Course: Ruby For Beginner's Guide To Ruby Programming, Ruby On Rails & Rails Programming (ruby, Operating Systems, Programming) (volume 1)",
+        "storeName": "Turn the Page",
+        "transactionAmount": 17.5,
+        "transactionDate": "08/13/2019 11:43 PM"
+      },
+      {
+        "bookName": "Head First Rails: A Learner's Companion To Ruby On Rails",
+        "storeName": "Turn the Page",
+        "transactionAmount": 11.58,
+        "transactionDate": "09/23/2018 10:07 PM"
+      },
+      {
+        "bookName": "Metaprogramming Ruby 2: Program Like The Ruby Pros (facets Of Ruby)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 10.57,
+        "transactionDate": "09/21/2019 10:49 PM"
+      },
+      {
+        "bookName": "Ruby Red (the Ruby Red Trilogy)",
+        "storeName": "Look Inna Book",
+        "transactionAmount": 13.68,
+        "transactionDate": "04/30/2019 04:28 AM"
+      },
+      {
+        "bookName": "Dr.excite/elixir/",
+        "storeName": "The Book Basement",
+        "transactionAmount": 13.86,
+        "transactionDate": "02/01/2020 01:02 PM"
+      },
+      {
+        "bookName": "Elixir Refused",
+        "storeName": "The Book Basement",
+        "transactionAmount": 11.09,
+        "transactionDate": "03/19/2019 01:31 AM"
+      }
+    ]
+  },
+  {
+    "cashBalance": 424.42,
+    "id": 19,
+    "name": "Beverly Corbin",
+    "purchaseHistory": [{
+        "bookName": "Swift",
+        "storeName": "Downtown Books",
+        "transactionAmount": 15.75,
+        "transactionDate": "01/09/2019 11:20 AM"
+      },
+      {
+        "bookName": "Cypseloides: Black Swift, Chestnut-collared Swift, White-chinned Swift, Great Dusky Swift, White-fronted Swift, Rothschild's Swift,",
+        "storeName": "Downtown Books",
+        "transactionAmount": 10.35,
+        "transactionDate": "06/13/2018 10:21 AM"
+      },
+      {
+        "bookName": "Swift: The Mystery of His Life and Love",
+        "storeName": "Downtown Books",
+        "transactionAmount": 12.06,
+        "transactionDate": "01/19/2018 06:15 PM"
+      },
+      {
+        "bookName": "Golden Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 9.25,
+        "transactionDate": "02/01/2018 07:26 PM"
+      },
+      {
+        "bookName": "Elixir Cookbook",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 9.34,
+        "transactionDate": "04/13/2018 11:40 PM"
+      },
+      {
+        "bookName": "Jorge Galindo: Elixir",
+        "storeName": "A Whole New World Bookstore",
+        "transactionAmount": 9.25,
+        "transactionDate": "07/04/2018 08:09 PM"
+      },
+      {
+        "bookName": "Pro Swift - Swift 4.1 Edition",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.95,
+        "transactionDate": "04/09/2018 05:27 AM"
+      },
+      {
+        "bookName": "Functional Swift: Updated For Swift 4",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.64,
+        "transactionDate": "10/10/2018 12:25 AM"
+      },
+      {
+        "bookName": "Beginning Xcode: Swift Edition: Swift Edition",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.95,
+        "transactionDate": "02/13/2019 12:01 PM"
+      },
+      {
+        "bookName": "Beginning Ios 13 & Swift App Development: Develop Ios Apps With Xcode 11, Swift 5, Core Ml, Arkit And More",
+        "storeName": "Uptown Books",
+        "transactionAmount": 13.35,
+        "transactionDate": "06/20/2018 03:57 AM"
+      },
+      {
+        "bookName": "Beginning Xcode",
+        "storeName": "Uptown Books",
+        "transactionAmount": 11.14,
+        "transactionDate": "12/22/2018 03:12 PM"
+      },
+      {
+        "bookName": "Xcode 3 Unleashed",
+        "storeName": "Uptown Books",
+        "transactionAmount": 10.17,
+        "transactionDate": "04/26/2020 02:43 AM"
+      },
+      {
+        "bookName": "Cypseloides: Black Swift, Chestnut-collared Swift, White-chinned Swift, Great Dusky Swift, White-fronted Swift, Rothschild's Swift,",
+        "storeName": "Downtown Books",
+        "transactionAmount": 10.35,
+        "transactionDate": "06/13/2018 09:58 PM"
+      },
+      {
+        "bookName": "Swift: The Mystery of His Life and Love",
+        "storeName": "Downtown Books",
+        "transactionAmount": 12.06,
+        "transactionDate": "08/17/2018 05:57 AM"
+      },
+      {
+        "bookName": "Functional Swift: Updated For Swift 4",
+        "storeName": "Downtown Books",
+        "transactionAmount": 13.64,
+        "transactionDate": "01/02/2018 05:54 AM"
+      },
+      {
+        "bookName": "Taylor Swift",
+        "storeName": "Uptown Books",
+        "transactionAmount": 10.05,
+        "transactionDate": "04/28/2019 03:38 AM"
+      }
+    ]
+  }
+]
