@@ -46,4 +46,13 @@ It'd be great if you can deploy this on the free tier of any cloud hosting platf
 * Fork this repository to your github account.
 * Add redtear1115 as collaborator to your private repository.
 * Write a introduction to all your works on following link.
-  * Link: [response.md](response.md) (Current contest as an example. Feel free to edit/remove it.)
+* Link: [response.md](response.md) (Current contest as an example. Feel free to edit/remove it.)
+
+# Project Setup
+* pip install pipenv
+* pipenv --three 
+* python -m pipenv shell (in virtual env)
+* pip install - r requirements.txt
+* gunicorn --bind 0.0.0.0:8000 myproject.wsgi
+
+Then, open (Site Domain):8000
