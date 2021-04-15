@@ -12,13 +12,14 @@ WEEKDAYS = [
 # Create your models here.
 class BookStore(models.Model):
     cash_balance = models.FloatField(null=False)
-    books = models.ForeignKey('Book', on_delete=models.CASCADE)
-    opening_hours = models.ManyToManyField('OpeningHours')
     store_name = models.CharField(max_length=100, null =False)
+    opening_hours = models.ManyToManyField('OpeningHours')
+
 
 class Book(models.Model):
+    books = models.ForeignKey(BookStore, on_delete=models.CASCADE)
     book_name = models.CharField(max_length=100, null=False)
-    price = FloatField(null=Fasle)
+    price = models.FloatField(null=False)
 
 class OpeningHours(models.Model):
     week_day = models.CharField(max_length=20, choices=WEEKDAYS)
