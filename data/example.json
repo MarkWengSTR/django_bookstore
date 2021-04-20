@@ -1,0 +1,16 @@
+[{
+  "cashBalance": 4483.84,
+  "book": [{
+    "bookName": "Ruby: The Autobiography",
+    "price": 13.88
+
+  }],
+  "openingHour": [{
+    "week_day": "Mon",
+    "start_hour": "14", 
+    "start_min": "30", 
+    "end_hour": "20",
+    "end_min": "0"
+  }],
+  "storeName": "Look Inna Book"
+}]
