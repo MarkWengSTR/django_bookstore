@@ -10,7 +10,7 @@ class BookStore(models.Model):
 
 class Book(models.Model):
     books_store = models.ForeignKey(BookStore, on_delete=models.CASCADE)
-    book_name = models.CharField(max_length=100, null=False)
+    book_name = models.CharField(max_length=200, null=False)
     price = models.FloatField(null=False)
 
 

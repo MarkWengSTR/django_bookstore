@@ -8,7 +8,7 @@ from django.db import migrations
 
 book_store_json_dir = os.path.abspath(
     os.path.join(os.path.dirname(__file__), '../../data'))
-book_store_filename = 'example.json'
+book_store_filename = 'book_store_data.json'
 
 
 def parse_op_hour_str(op_h_str):
@@ -100,7 +100,7 @@ def unload_book_store(apps, schema_editor):
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('bookstore_api', '0001_initial'),
+        ('bookstore_api', '0002_alter_book_book_name'),
     ]
 
     operations = [
