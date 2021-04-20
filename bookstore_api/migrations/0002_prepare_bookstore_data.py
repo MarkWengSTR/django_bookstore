@@ -2,6 +2,7 @@
 
 import os
 import json
+import re
 
 from django.db import migrations
 
@@ -10,17 +11,47 @@ book_store_json_dir = os.path.abspath(
 book_store_filename = 'example.json'
 
 
-def parse_op_hour(op_h_data):
-    week_day, start_hour, start_min, end_hour, end_min = op_h_data['week_day'],\
-        op_h_data['start_hour'], op_h_data['start_min'], op_h_data['end_hour'], op_h_data['end_min']
+def parse_op_hour_str(op_h_str):
+    op_hour_datas = []
+
+    for time_item in op_h_str.split('/'):
+        week_days_datas = re.findall(
+            "(Mon|Tues|Wed|Thurs|Fri|Sat|Sun)+", time_item)
+        hours_datas = re.findall("(\d+):?(\d+)*\s(am|pm)", time_item)
+        # 2:30 pm - 8 pm -> [('2', '30', 'pm'), ('8', '', 'pm')]
+
+        data_dict = prepare_hours_datas(hours_datas)
+
+        for week_day in week_days_datas:
+            data = data_dict.copy()
+            data['week_day'] = week_day
+
+            op_hour_datas += [data]
+
+    return op_hour_datas
+
+
+def prepare_hours_datas(hours_datas):
+    # [('2', '30', 'pm'), ('8', '', 'pm')]
+    start_data, end_data = hours_datas
+
+    start_hour, start_min, start_noon = start_data
+    end_hour, end_min, end_noon = end_data
 
     return {
-        'week_day': week_day,
-        'start_hour': start_hour,
-        'start_min': start_min,
-        'end_hour': end_hour,
-        'end_min': end_min,
+        'start_hour': add_12_afternoon(start_hour, start_noon),
+        'start_min': convert_empty_to_0(start_min),
+        'end_hour': add_12_afternoon(end_hour, end_noon),
+        'end_min': convert_empty_to_0(end_min),
     }
+
+
+def add_12_afternoon(hour, noon="am"):
+    return str(int(hour) + 12) if noon.strip() == "pm" else hour
+
+
+def convert_empty_to_0(mi):
+    return 0 if mi.strip() == '' else mi
 
 
 def load_book_store(apps, schema_editor):
@@ -40,23 +71,21 @@ def load_book_store(apps, schema_editor):
             )
             bs.save()
 
-            for book_data in store_data['book']:
+            for book_data in store_data['books']:
                 Book(
                     books_store=bs,
                     book_name=book_data['bookName'],
                     price=book_data['price'],
                 ).save()
 
-            for op_h_data in store_data['openingHour']:
-                open_time_dict = parse_op_hour(op_h_data)
-
+            for open_hours in parse_op_hour_str(store_data['openingHours']):
                 OpeningHour(
                     books_store=bs,
-                    week_day=open_time_dict['week_day'],
-                    start_hour=open_time_dict['start_hour'],
-                    start_min=open_time_dict['start_min'],
-                    end_hour=open_time_dict['end_hour'],
-                    end_min=open_time_dict['end_min']
+                    week_day=open_hours['week_day'],
+                    start_hour=open_hours['start_hour'],
+                    start_min=open_hours['start_min'],
+                    end_hour=open_hours['end_hour'],
+                    end_min=open_hours['end_min']
                 ).save()
 
 
