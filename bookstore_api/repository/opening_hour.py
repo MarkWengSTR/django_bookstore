@@ -14,7 +14,7 @@ class OpeningHourManager(models.Manager):
                        time(data.end_hour, data.end_min),
                        time(req_hour, req_min)
                    ),
-                   self.get_queryset()
+                   self.get_queryset().select_related('book_store')  # avoid double query
                    )
         )
 
