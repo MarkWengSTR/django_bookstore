@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
-from bookstore_api.models import OpeningHour
+from bookstore_api.models import BookStore
 # Create your views here.
 
 
@@ -31,7 +31,7 @@ def find_store_open_at(request):
     open_stores_name = list(
         map(
             lambda store_obj: store_obj.name,
-            OpeningHour.objects.list_store_open_at(req_hour, req_min)
+            BookStore.objects.list_store_open_at(req_hour, req_min)
         ))
 
     return Response({
@@ -60,7 +60,7 @@ def find_store_open_weekday_at(request):
     open_stores_name = list(
         map(
             lambda store_obj: store_obj.name,
-            OpeningHour.objects.list_store_open_weekday_at(
+            BookStore.objects.list_store_open_weekday_at(
                 req_weekday, req_hour, req_min)
         ))
 

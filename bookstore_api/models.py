@@ -1,12 +1,14 @@
 from django.db import models
 
 from bookstore_api.repository.opening_hour import OpeningHourManager
+from bookstore_api.repository.book_store import BookStoreManager
 # # Create your models here.
 
 
 class BookStore(models.Model):
     cash_balance = models.FloatField(null=False)
     name = models.CharField(max_length=100, null=False)
+    objects = BookStoreManager()
 
     def __str__(self):
         return '{0} (cash: {1})'.format(self.name, self.cash_balance)
@@ -43,6 +45,12 @@ class OpeningHour(models.Model):
         return '{0} ({1}:{2} - {3}:{4})'.format(
             self.week_day, self.start_hour, self.start_min, self.end_hour, self.end_min
         )
+
+    def open_hour(self):
+        hour_diff = (self.start_hour + (self.start_min / 60)) - \
+            (self.end_hour + (self.end_min / 60))
+
+        return hour_diff + 12 if hour_diff < 0 else hour_diff
 
 
 class User(models.Model):
