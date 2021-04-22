@@ -13,6 +13,13 @@ class BookStore(models.Model):
     def __str__(self):
         return '{0} (cash: {1})'.format(self.name, self.cash_balance)
 
+    def weekly_open_hours(self):
+        return sum(
+            map(
+                lambda op_hour_obj: op_hour_obj.open_hours(), self.openinghour_set.all()
+            )
+        )
+
 
 class Book(models.Model):
     book_store = models.ForeignKey(BookStore, on_delete=models.CASCADE)
@@ -46,9 +53,9 @@ class OpeningHour(models.Model):
             self.week_day, self.start_hour, self.start_min, self.end_hour, self.end_min
         )
 
-    def open_hour(self):
-        hour_diff = (self.start_hour + (self.start_min / 60)) - \
-            (self.end_hour + (self.end_min / 60))
+    def open_hours(self):
+        hour_diff = (self.end_hour + (self.end_min / 60)) - \
+            (self.start_hour + (self.start_min / 60))
 
         return hour_diff + 12 if hour_diff < 0 else hour_diff
 
