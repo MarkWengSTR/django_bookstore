@@ -19,6 +19,8 @@ class BookStoreManager(models.Manager):
         return list(set(map(lambda obj: obj.book_store, objs_in_weekday)))
 
     def list_compared_open_hours_per_weekday(self, week_day, req_hours, compare):
+        req_hours = int(req_hours)
+
         objs = mods.OpeningHour.objects.find_more_or_less_open_hours(
             req_hours, compare)
 
@@ -27,6 +29,7 @@ class BookStoreManager(models.Manager):
         return list(set(map(lambda obj: obj.book_store, objs_in_weekday)))
 
     def list_compared_open_hours_per_week(self, req_hours, compare):
+        req_hours = int(req_hours)
         stores = self.get_queryset().prefetch_related('openinghour_set')
 
         if compare == 'larger':
