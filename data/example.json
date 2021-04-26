@@ -1,0 +1,10 @@
+[{
+  "cashBalance": 4483.84,
+  "books": [{
+    "bookName": "Ruby: The Autobiography",
+    "price": 13.88
+
+  }],
+  "openingHours": "Mon, Fri 2:30 pm - 8 pm / Tues 11 am - 2 pm / Weds 1:15 pm - 3:15 am / Thurs 10 am - 3:15 am / Sat 5 am - 11:30 am / Sun 10:45 am - 5 pm",
+  "storeName": "Look Inna Book"
+}]

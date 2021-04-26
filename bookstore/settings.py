@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-v&*dfjiyq(n13*vib^ue4m%o0u@$5fqu$+=6z9m24kb2^mnkx_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['140.110.26.221']
+ALLOWED_HOSTS = ['140.110.26.234']
 
 
 # Application definition
@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django.contrib.postgres',
     'bookstore_api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -111,13 +114,14 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Taipei'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)
@@ -130,3 +134,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+##DATETIME_INPUT_FORMATS
+#DATETIME_INPUT_FORMATS = ['%Y-%m-%d %H:%M']
