@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 
 import bookstore_api.models as mods
 
@@ -62,3 +63,9 @@ class BookStoreManager(models.Manager):
                    store.book_set.filter(
                        price__gt=req_low_price, price__lt=req_high_price),
                    self.list_compared_books_num(req_num, compare)))
+
+    def list_search_by_name(self, req_name):
+        vector = SearchVector('name')
+        query = SearchQuery(req_name)
+
+        return self.annotate(rank=SearchRank(vector, query)).order_by('-rank')
