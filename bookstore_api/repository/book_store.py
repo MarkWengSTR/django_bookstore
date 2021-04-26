@@ -33,16 +33,32 @@ class BookStoreManager(models.Manager):
         stores = self.get_queryset().prefetch_related('openinghour_set')
 
         if compare == 'larger':
-            return list(
-                filter(lambda store:
-                       store.weekly_open_hours() > req_hours,
-                       stores
-                       )
-            )
+            result = filter(lambda store:
+                            store.weekly_open_hours() > req_hours,
+                            stores)
         else:
-            return list(
-                filter(lambda store:
-                       store.weekly_open_hours() < req_hours,
-                       stores
-                       )
-            )
+            result = filter(lambda store:
+                            store.weekly_open_hours() < req_hours,
+                            stores)
+        return list(result)
+
+    def list_compared_books_num(self, req_num, compare):
+        req_num = int(req_num)
+        stores = self.get_queryset().prefetch_related('book_set')
+
+        if compare == 'larger':
+            result = filter(lambda store:
+                            store.book_set.all().count() > req_num,
+                            stores)
+        else:
+            result = filter(lambda store:
+                            store.book_set.all().count() < req_num,
+                            stores)
+        return list(result)
+
+    def list_compared_books_num_price_range(self, req_num, compare, req_low_price, req_high_price):
+        return list(
+            filter(lambda store:
+                   store.book_set.filter(
+                       price__gt=req_low_price, price__lt=req_high_price),
+                   self.list_compared_books_num(req_num, compare)))

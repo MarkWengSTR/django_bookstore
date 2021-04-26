@@ -2,6 +2,7 @@ from django.db import models
 
 from bookstore_api.repository.opening_hour import OpeningHourManager
 from bookstore_api.repository.book_store import BookStoreManager
+from bookstore_api.repository.book import BookManager
 # # Create your models here.
 
 
@@ -25,6 +26,7 @@ class Book(models.Model):
     book_store = models.ForeignKey(BookStore, on_delete=models.CASCADE)
     name = models.CharField(max_length=200, null=False)
     price = models.FloatField(null=False)
+    objects = BookManager()
 
     def __str__(self):
         return '{0} (price: {1})'.format(self.name, self.price)
