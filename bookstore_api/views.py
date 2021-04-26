@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
-from bookstore_api.models import BookStore
+from bookstore_api.models import BookStore, Book
 # Create your views here.
 
 
@@ -98,5 +98,32 @@ def find_store_with_open_hour(request):
 
     return Response({
         "open_stores": list(result_stores),
+        "request_data": request.query_params
+    })
+
+
+@api_view(['GET'])
+def find_books_in_price_range(request):
+    """
+    {
+        low_price: 10,
+        high_price: 30,
+        sort: "name" or "price",
+    }
+    """
+    req_low_price = request.query_params.get('low_price')
+    req_high_price = request.query_params.get('high_price')
+    req_sort = request.query_params.get('sort')
+
+    result = list(
+        map(
+            lambda book: book.name,
+            Book.objects.list_book_by_price(
+                req_low_price, req_high_price, req_sort)
+        )
+    )
+
+    return Response({
+        "books": result,
         "request_data": request.query_params
     })

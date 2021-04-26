@@ -9,4 +9,6 @@ urlpatterns = [
          name='find_store_open_weekday_at'),
     path('find_store_with_open_hour/', views.find_store_with_open_hour,
          name='find_store_with_open_hour'),
+    path('find_books_in_price_range/', views.find_books_in_price_range,
+         name='find_books_in_price_range'),
 ]
