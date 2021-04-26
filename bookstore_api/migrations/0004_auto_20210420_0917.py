@@ -46,7 +46,7 @@ class Migration(migrations.Migration):
                 ('book_name', models.CharField(max_length=200)),
                 ('store_name', models.CharField(max_length=100)),
                 ('transaction_amount', models.FloatField()),
-                ('transaction_date', models.DateField()),
+                ('transaction_date', models.DateTimeField()),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='bookstore_api.user')),
             ],
         ),

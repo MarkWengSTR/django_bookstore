@@ -1,14 +1,14 @@
 from django.db import models
 
-from bookstore_api.repository.opening_hour import OpeningHourManager
-from bookstore_api.repository.book_store import BookStoreManager
+#from bookstore_api.repository.opening_hour import OpeningHourManager
+#from bookstore_api.repository.book_store import BookStoreManager
 # # Create your models here.
 
 
 class BookStore(models.Model):
     cash_balance = models.FloatField(null=False)
     name = models.CharField(max_length=100, null=False)
-    objects = BookStoreManager()
+#    objects = BookStoreManager()
 
     def __str__(self):
         return '{0} (cash: {1})'.format(self.name, self.cash_balance)
@@ -39,7 +39,7 @@ class OpeningHour(models.Model):
     start_min = models.PositiveSmallIntegerField(null=True)
     end_hour = models.PositiveSmallIntegerField(null=True)
     end_min = models.PositiveSmallIntegerField(null=True)
-    objects = OpeningHourManager()
+    #objects = OpeningHourManager()
 
     def __str__(self):
         return '{0} ({1}:{2} - {3}:{4})'.format(
@@ -66,8 +66,9 @@ class PurchaseHistory(models.Model):
     book_name = models.CharField(max_length=200, null=False)
     store_name = models.CharField(max_length=100, null=False)
     transaction_amount = models.FloatField(null=False)
-    transaction_date = models.DateField(null=False)
+    transaction_date = models.DateTimeField(blank=True, null=True)
 
     def __str__(self):
         return 'book: {0}, store: {1}(amount: {2}, date: {3})'.format(
-            self.book_name, self.store_name, self.transaction_amount, self.transaction_date)
+                self.book_name, self.store_name, self.transaction_amount,
+                self.transaction_date)
