@@ -68,3 +68,35 @@ def find_store_open_weekday_at(request):
         "open_stores": open_stores_name,
         "request_data": request.query_params
     })
+
+
+@api_view(['GET'])
+def find_store_with_open_hour(request):
+    """
+    {
+        weekday: 'Mon',
+        hours: 40,
+        compare: larger,
+    }
+    """
+    req_weekday = request.query_params.get('weekday', '')
+    req_hours = request.query_params.get('hours')
+    req_compare = request.query_params.get('compare')
+
+    if req_weekday == '':
+        result_stores = map(
+            lambda store_obj: store_obj.name,
+            BookStore.objects.list_compared_open_hours_per_week(
+                req_hours, req_compare)
+        )
+    else:
+        result_stores = map(
+            lambda store_obj: store_obj.name,
+            BookStore.objects.list_compared_open_hours_per_weekday(
+                req_weekday, req_hours, req_compare)
+        )
+
+    return Response({
+        "open_stores": list(result_stores),
+        "request_data": request.query_params
+    })
