@@ -3,7 +3,7 @@ from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
 from bookstore_api.models import BookStore, Book
-from bookstore_api.decorators.request import req_keys_check
+from bookstore_api.decorators.request import req_keys_check, req_params_in_key_check
 # Create your views here.
 
 
@@ -16,6 +16,7 @@ def show_index(request):
 
 @api_view(['GET'])
 @req_keys_check(keys=["hour", "min", "noon"])
+@req_params_in_key_check(params={"noon": ["am", "pm"]})
 def find_store_open_at(request):
     """
     {
@@ -44,6 +45,10 @@ def find_store_open_at(request):
 
 @api_view(['GET'])
 @req_keys_check(keys=["hour", "min", "noon", "weekday"])
+@req_params_in_key_check(params={
+    "noon": ["am", "pm"],
+    "weekday": ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"]
+})
 def find_store_open_weekday_at(request):
     """
     {
@@ -75,6 +80,7 @@ def find_store_open_weekday_at(request):
 
 @api_view(['GET'])
 @req_keys_check(keys=["weekday", "hours", "compare"])
+@req_params_in_key_check(params={"compare": ["larger", "smaller"]})
 def find_store_with_open_hour(request):
     """
     {
@@ -108,6 +114,7 @@ def find_store_with_open_hour(request):
 
 @api_view(['GET'])
 @req_keys_check(keys=["low_price", "high_price", "sort"])
+@req_params_in_key_check(params={"sort": ["name", "price"]})
 def find_books_in_price_range(request):
     """
     {
@@ -136,6 +143,7 @@ def find_books_in_price_range(request):
 
 @api_view(['GET'])
 @req_keys_check(keys=["num", "compare"])
+@req_params_in_key_check(params={"compare": ["larger", "smaller"]})
 def find_bookstore_have_num_of_books(request):
     """
     {
@@ -161,6 +169,7 @@ def find_bookstore_have_num_of_books(request):
 
 @api_view(['GET'])
 @req_keys_check(keys=["name", "compare", "low_price", "high_price"])
+@req_params_in_key_check(params={"compare": ["larger", "smaller"]})
 def find_bs_have_num_of_books_price_range(request):
     """
     {
@@ -191,6 +200,7 @@ def find_bs_have_num_of_books_price_range(request):
 
 @api_view(['GET'])
 @req_keys_check(keys=["name", "book_or_store"])
+@req_params_in_key_check(params={"book_or_store": ["book", "store"]})
 def search_b_bs_by_name(request):
     """
     {
@@ -213,6 +223,6 @@ def search_b_bs_by_name(request):
         )
 
     return Response({
-        "store": list(result),
+        req_b_or_bs: list(result),
         "request_data": request.query_params
     })
