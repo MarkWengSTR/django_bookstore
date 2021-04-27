@@ -180,3 +180,31 @@ def find_bs_have_num_of_books_price_range(request):
         "store": result,
         "request_data": request.query_params
     })
+
+
+@api_view(['GET'])
+def search_b_bs_by_name(request):
+    """
+    {
+        name: Rails,
+        book_or_store: book(or store),
+    }
+    """
+    req_name = request.query_params.get('name')
+    req_b_or_bs = request.query_params.get('book_or_store')
+
+    if req_b_or_bs == 'store':
+        result = map(
+            lambda store: store.name,
+            BookStore.objects.list_search_by_name(req_name)
+        )
+    else:
+        result = map(
+            lambda book: book.name,
+            Book.objects.list_search_by_name(req_name)
+        )
+
+    return Response({
+        "store": list(result),
+        "request_data": request.query_params
+    })

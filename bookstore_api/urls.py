@@ -15,4 +15,6 @@ urlpatterns = [
          name='find_bookstore_by_book_num'),
     path('find_bookstore_by_book_num_price_range/', views.find_bs_have_num_of_books_price_range,
          name='find_bookstore_by_book_num_price_range'),
+    path('find_book_or_store_by_name/', views.search_b_bs_by_name,
+         name='find_book_or_store_by_name'),
 ]
