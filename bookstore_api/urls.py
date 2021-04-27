@@ -11,4 +11,6 @@ urlpatterns = [
          name='find_store_with_open_hour'),
     path('find_books_in_price_range/', views.find_books_in_price_range,
          name='find_books_in_price_range'),
+    path('find_bookstore_by_book_num/', views.find_bookstore_have_num_of_books,
+         name='find_bookstore_by_book_num'),
 ]

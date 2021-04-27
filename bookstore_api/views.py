@@ -127,3 +127,27 @@ def find_books_in_price_range(request):
         "books": result,
         "request_data": request.query_params
     })
+
+
+@api_view(['GET'])
+def find_bookstore_have_num_of_books(request):
+    """
+    {
+        num: 10,
+        compare: larger,
+    }
+    """
+    req_num = request.query_params.get('num')
+    req_compare = request.query_params.get('compare')
+
+    result = list(
+        map(
+            lambda store: store.name,
+            BookStore.objects.list_compared_books_num(req_num, req_compare)
+        )
+    )
+
+    return Response({
+        "store": result,
+        "request_data": request.query_params
+    })
