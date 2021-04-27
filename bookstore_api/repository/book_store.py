@@ -1,18 +1,20 @@
 from django.db import models
 from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
 
-import bookstore_api.models as mods
-
 
 class BookStoreManager(models.Manager):
     def list_store_open_at(self, req_hour, req_min):
-        objs = mods.OpeningHour.objects.list_object_open_at(
+        from bookstore_api.models import OpeningHour
+
+        objs = OpeningHour.objects.list_object_open_at(
             req_hour, req_min)
 
         return list(set(map(lambda obj: obj.book_store, objs)))
 
     def list_store_open_weekday_at(self, week_day, req_hour, req_min):
-        objs = mods.OpeningHour.objects.list_object_open_at(
+        from bookstore_api.models import OpeningHour
+
+        objs = OpeningHour.objects.list_object_open_at(
             req_hour, req_min)
 
         objs_in_weekday = filter(lambda obj: obj.week_day == week_day, objs)
@@ -20,9 +22,11 @@ class BookStoreManager(models.Manager):
         return list(set(map(lambda obj: obj.book_store, objs_in_weekday)))
 
     def list_compared_open_hours_per_weekday(self, week_day, req_hours, compare):
+        from bookstore_api.models import OpeningHour
+
         req_hours = int(req_hours)
 
-        objs = mods.OpeningHour.objects.find_more_or_less_open_hours(
+        objs = OpeningHour.objects.find_more_or_less_open_hours(
             req_hours, compare)
 
         objs_in_weekday = filter(lambda obj: obj.week_day == week_day, objs)
