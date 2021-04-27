@@ -151,3 +151,32 @@ def find_bookstore_have_num_of_books(request):
         "store": result,
         "request_data": request.query_params
     })
+
+
+@api_view(['GET'])
+def find_bs_have_num_of_books_price_range(request):
+    """
+    {
+        num: 10,
+        compare: larger,
+        low_price: 10,
+        high_price: 30,
+    }
+    """
+    req_num = request.query_params.get('num')
+    req_compare = request.query_params.get('compare')
+    req_low_price = request.query_params.get('low_price')
+    req_high_price = request.query_params.get('high_price')
+
+    result = list(
+        map(
+            lambda store: store.name,
+            BookStore.objects.list_compared_books_num_price_range(
+                req_num, req_compare, req_low_price, req_high_price)
+        )
+    )
+
+    return Response({
+        "store": result,
+        "request_data": request.query_params
+    })
