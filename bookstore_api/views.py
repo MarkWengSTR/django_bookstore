@@ -3,6 +3,7 @@ from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
 from bookstore_api.models import BookStore, Book
+from bookstore_api.decorators.request import req_keys_check
 # Create your views here.
 
 
@@ -14,6 +15,7 @@ def show_index(request):
 
 
 @api_view(['GET'])
+@req_keys_check(keys=["hour", "min", "noon"])
 def find_store_open_at(request):
     """
     {
@@ -41,6 +43,7 @@ def find_store_open_at(request):
 
 
 @api_view(['GET'])
+@req_keys_check(keys=["hour", "min", "noon", "weekday"])
 def find_store_open_weekday_at(request):
     """
     {
@@ -71,6 +74,7 @@ def find_store_open_weekday_at(request):
 
 
 @api_view(['GET'])
+@req_keys_check(keys=["weekday", "hours", "compare"])
 def find_store_with_open_hour(request):
     """
     {
@@ -103,6 +107,7 @@ def find_store_with_open_hour(request):
 
 
 @api_view(['GET'])
+@req_keys_check(keys=["low_price", "high_price", "sort"])
 def find_books_in_price_range(request):
     """
     {
@@ -130,6 +135,7 @@ def find_books_in_price_range(request):
 
 
 @api_view(['GET'])
+@req_keys_check(keys=["num", "compare"])
 def find_bookstore_have_num_of_books(request):
     """
     {
@@ -154,6 +160,7 @@ def find_bookstore_have_num_of_books(request):
 
 
 @api_view(['GET'])
+@req_keys_check(keys=["name", "compare", "low_price", "high_price"])
 def find_bs_have_num_of_books_price_range(request):
     """
     {
@@ -183,6 +190,7 @@ def find_bs_have_num_of_books_price_range(request):
 
 
 @api_view(['GET'])
+@req_keys_check(keys=["name", "book_or_store"])
 def search_b_bs_by_name(request):
     """
     {
