@@ -226,3 +226,34 @@ def search_b_bs_by_name(request):
         req_b_or_bs: list(result),
         "request_data": request.query_params
     })
+
+# User amount date range
+@api_view(['GET'])
+@req_keys_check(keys=["num", "amount", "low_date", "high_date"])
+# count date 
+def find_user_amount_date_range(request):
+    """
+    {
+        num:5,
+        amount:1000
+        low_date: 2021/05/10,
+        hight_date: 2021/05/12
+    }
+    """
+    req_num = request.query_params.get('num')
+    req_amount = request.query_params.get('amount')
+    req_low_date = request.query_params.get('low_date')
+    req_high_date = request.query_params.get('high_date')
+
+    result = list(
+        map(
+            lambda user: user.name,
+            User.objects.list_user_amount_date_range(
+                req_num, req_amount, req_low_date, req_high_date)
+        )
+    )
+
+    return Response({
+        "user": result,
+        "request_data": request.query_params
+    })
