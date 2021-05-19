@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
-from bookstore_api.models import BookStore, Book
+from bookstore_api.models import BookStore, Book, User
 from bookstore_api.decorators.request import req_keys_check, req_params_in_key_check
 # Create your views here.
 
@@ -224,5 +224,31 @@ def search_b_bs_by_name(request):
 
     return Response({
         req_b_or_bs: list(result),
+        "request_data": request.query_params
+    })
+
+
+@api_view(['GET'])
+@req_keys_check(keys=["num", "low_date", "high_date"])
+def find_user_date_range_amount(request):
+    """
+    {
+        num: 10,
+        low_date:"2021-03-10",
+        high_date: "2021-04-03",
+    }
+    """
+    req_num = request.query_params.get('num')
+    req_low_date = request.query_params.get('low_date')
+    req_high_date = request.query_params.get('high_date')
+
+    result = list(map(lambda user, : user,
+                      User.objects.list_user_date_range_amount(
+                          req_num, req_low_date, req_high_date)
+                      )
+                  )
+
+    return Response({
+        "user": result,
         "request_data": request.query_params
     })

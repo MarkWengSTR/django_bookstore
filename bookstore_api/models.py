@@ -3,6 +3,7 @@ from django.db import models
 from bookstore_api.repository.opening_hour import OpeningHourManager
 from bookstore_api.repository.book_store import BookStoreManager
 from bookstore_api.repository.book import BookManager
+from bookstore_api.repository.user import UserManager
 # # Create your models here.
 
 
@@ -65,6 +66,7 @@ class OpeningHour(models.Model):
 class User(models.Model):
     name = models.CharField(max_length=50, null=False)
     cash_balance = models.FloatField(null=False)
+    objects = UserManager()
 
     def __str__(self):
         return '{0} (cash: {1})'.format(self.name, self.cash_balance)
