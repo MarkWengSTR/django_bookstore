@@ -6,7 +6,8 @@ def req_keys_check(keys=[]):
     def keys_check_deco(func):
         @wraps(func)
         def wrapper_func(request, *args, **kwargs):
-            if sorted(keys) == sorted(request.query_params.keys()):
+            req_keys_ignore_format  = request.query_params.keys()-['format']
+            if sorted(keys) == sorted(req_keys_ignore_format):
                 return func(request, *args, **kwargs)
             else:
                 return Response({"error_msg": "key error"})
