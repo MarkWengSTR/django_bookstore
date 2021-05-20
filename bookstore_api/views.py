@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
-from bookstore_api.models import BookStore, Book,User
+from bookstore_api.models import BookStore, Book, User
 from bookstore_api.decorators.request import req_keys_check, req_params_in_key_check
 # Create your views here.
 
