@@ -242,7 +242,7 @@ def find_user_date_range_amount(request):
     req_low_date = request.query_params.get('low_date')
     req_high_date = request.query_params.get('high_date')
 
-    result = list(map(lambda user,: user, 
+    result = list(map(lambda user: user, 
             User.objects.list_user_date_range_amount(
                 req_num, req_low_date, req_high_date)
                      )
