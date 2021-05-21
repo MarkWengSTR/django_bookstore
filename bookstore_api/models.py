@@ -1,9 +1,9 @@
 from django.db import models
-
 from bookstore_api.repository.opening_hour import OpeningHourManager
 from bookstore_api.repository.book_store import BookStoreManager
 from bookstore_api.repository.book import BookManager
 from bookstore_api.repository.user import UserManager
+from bookstore_api.repository.purchase import PurchaseManager
 # # Create your models here.
 
 
@@ -78,6 +78,7 @@ class PurchaseHistory(models.Model):
     store_name = models.CharField(max_length=100, null=False)
     transaction_amount = models.FloatField(null=False)
     transaction_date = models.DateTimeField(blank=True, null=True)
+    objects = PurchaseManager()
 
     def __str__(self):
         return 'book: {0}, store: {1}(amount: {2}, date: {3})'.format(

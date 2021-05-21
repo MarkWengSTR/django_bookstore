@@ -2,7 +2,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
-from bookstore_api.models import BookStore, Book, User
+from bookstore_api.models import BookStore, Book, User, PurchaseHistory
 from bookstore_api.decorators.request import req_keys_check, req_params_in_key_check
 # Create your views here.
 
@@ -250,5 +250,27 @@ def find_user_date_range_amount(request):
 
     return Response({
         "user": result,
+        "request_data": request.query_params
+    })
+
+
+@api_view(['GET'])
+@req_keys_check(keys=["low_date", "high_date"])
+def find_purchase_count_amount(request):
+    """
+    {
+        low_date:"2021-03-10"
+        high_date:"2021-04-10"
+    }
+    """
+    req_low_date = request.query_params.get('low_date')
+    req_high_date = request.query_params.get('high_date')
+
+    result = PurchaseHistory.objects \
+             .list_purchase_count_amount(
+             req_low_date, req_high_date)
+
+    return Response({
+        "result": result,
         "request_data": request.query_params
     })

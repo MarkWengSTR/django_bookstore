@@ -20,4 +20,6 @@ urlpatterns = [
 #User
     path('find_user_date_range_amount/', views.find_user_date_range_amount,
          name='find_user_date_range_amount'),
+    path('find_purchase_count_amount/', views.find_purchase_count_amount,
+         name='find_purchase_count_amount'),
 ]
