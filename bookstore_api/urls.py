@@ -22,4 +22,7 @@ urlpatterns = [
          name='find_user_date_range_amount'),
     path('find_purchase_count_amount/', views.find_purchase_count_amount,
          name='find_purchase_count_amount'),
+    path('bsname_bookname_bookprice_username/list/<str:pk>/', views.list_bsname_bookname_bookprice_username,
+            name="list_bsname_bookname_bookprice_username"),
+    path('bsname_bookname_bookprice_username/update/<str:pk>/', views.update_bsname_bookname_bookprice_username,name="update_bsname_bookname_bookprice_username"),
 ]

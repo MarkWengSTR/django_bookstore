@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from bookstore_api.utils.time import add_12_afternoon
 from bookstore_api.models import BookStore, Book, User, PurchaseHistory
 from bookstore_api.decorators.request import req_keys_check, req_params_in_key_check
+from bookstore_api.serializers.serializer import UpdateSerializer
 # Create your views here.
 
 
@@ -274,3 +275,23 @@ def find_purchase_count_amount(request):
         "result": result,
         "request_data": request.query_params
     })
+
+
+@api_view(['GET'])
+def list_bsname_bookname_bookprice_username(request, pk):
+    user = User.objects.get(id=pk)
+    serializer = UpdateSerializer(user, many=False)
+
+    return Response(serializer.data)
+
+
+@api_view(['POST'])
+def update_bsname_bookname_bookprice_username(request, pk):
+    user = User.objects.get(id=pk)
+    serializer = UpdateSerializer(user, data=request.data, partial=True)
+    
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
+
+

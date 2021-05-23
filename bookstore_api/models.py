@@ -73,7 +73,7 @@ class User(models.Model):
 
 
 class PurchaseHistory(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='purchasehistory', null=True, blank=True)
     book_name = models.CharField(max_length=200, null=False)
     store_name = models.CharField(max_length=100, null=False)
     transaction_amount = models.FloatField(null=False)
