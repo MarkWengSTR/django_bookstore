@@ -17,12 +17,11 @@ urlpatterns = [
          name='find_bookstore_by_book_num_price_range'),
     path('find_book_or_store_by_name/', views.search_b_bs_by_name,
          name='find_book_or_store_by_name'),
-#User
     path('find_user_date_range_amount/', views.find_user_date_range_amount,
          name='find_user_date_range_amount'),
     path('find_purchase_count_amount/', views.find_purchase_count_amount,
          name='find_purchase_count_amount'),
     path('bsname_bookname_bookprice_username/list/<str:pk>/', views.list_bsname_bookname_bookprice_username,
             name="list_bsname_bookname_bookprice_username"),
-    path('bsname_bookname_bookprice_username/update/<str:pk>/', views.update_bsname_bookname_bookprice_username,name="update_bsname_bookname_bookprice_username"),
+    path('find_popular_bookstore/', views.find_popular_bookstore, name="find_popular_bookstore"),
 ]

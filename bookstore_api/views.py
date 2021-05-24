@@ -291,3 +291,16 @@ def list_bsname_bookname_bookprice_username(request, pk):
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
+
+
+@api_view(['GET'])
+def find_popular_bookstore(request):
+    from django.db.models import Count, Sum
+
+    result = BookStore.objects.values('name').annotate(
+               amount_count=Count('book__price'),total_price=Sum('book__price')
+               ).latest('amount_count', 'total_price')
+    
+    return Response(result)
+
+
