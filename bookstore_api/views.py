@@ -276,22 +276,18 @@ def find_purchase_count_amount(request):
         "request_data": request.query_params
     })
 
-
-@api_view(['GET'])
+# GET, POST bookstorename, bookname, bookprice, username
+@api_view(['GET', 'POST'])
 def list_bsname_bookname_bookprice_username(request, pk):
     user = User.objects.get(id=pk)
-    serializer = UpdateSerializer(user, many=False)
+    if request.method == 'GET':
+        serializer = UpdateSerializer(user)
 
-    return Response(serializer.data)
+        return Response(serializer.data)
 
-
-@api_view(['POST'])
-def update_bsname_bookname_bookprice_username(request, pk):
-    user = User.objects.get(id=pk)
-    serializer = UpdateSerializer(user, data=request.data, partial=True)
-    
-    if serializer.is_valid():
-        serializer.save()
-    return Response(serializer.data)
-
-
+    elif request.method == 'POST':
+        serializer = UpdateSerializer(user, data=request.data, partial=True)
+        
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
