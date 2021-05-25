@@ -304,3 +304,28 @@ def find_popular_bookstore(request):
     return Response(result)
 
 
+@api_view(['GET'])
+@req_keys_check(keys=["amount", "compare", "low_date", "high_date"])
+@req_params_in_key_check(params={"compare": ["larger", "smaller"]})
+def find_date_range_user_total(request):
+    """
+    {
+        amount: 10,
+        compare: larger,
+        low_date: "2020-02-10",
+        high_date: "2020-04-27",
+    }
+    """
+    req_amount = request.query_params.get('amount')
+    req_compare = request.query_params.get('compare')
+    req_low_date = request.query_params.get('low_date')
+    req_high_date = request.query_params.get('high_date')
+
+    result = User.objects.list_date_range_user_total(
+             req_amount, req_compare, req_low_date, req_high_date
+             )
+
+    return Response({
+        "result": result,
+        "request_data": request.query_params
+    })
