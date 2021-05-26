@@ -2,8 +2,9 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 from bookstore_api.utils.time import add_12_afternoon
-from bookstore_api.models import BookStore, Book
+from bookstore_api.models import BookStore, Book, User, PurchaseHistory
 from bookstore_api.decorators.request import req_keys_check, req_params_in_key_check
+from bookstore_api.serializers.serializer import UpdateSerializer
 # Create your views here.
 
 
@@ -224,5 +225,107 @@ def search_b_bs_by_name(request):
 
     return Response({
         req_b_or_bs: list(result),
+        "request_data": request.query_params
+    })
+
+
+@api_view(['GET'])
+@req_keys_check(keys=["num", "low_date", "high_date"])
+def find_user_date_range_amount(request):
+    """
+    {
+        num: 10,
+        low_date:"2021-03-10",
+        high_date: "2021-04-03",
+    }
+    """
+    req_num = request.query_params.get('num')
+    req_low_date = request.query_params.get('low_date')
+    req_high_date = request.query_params.get('high_date')
+
+    result = list(map(lambda user: user, 
+            User.objects.list_user_date_range_amount(
+                req_num, req_low_date, req_high_date)
+                     )
+            )
+
+    return Response({
+        "user": result,
+        "request_data": request.query_params
+    })
+
+
+@api_view(['GET'])
+@req_keys_check(keys=["low_date", "high_date"])
+def find_purchase_count_amount(request):
+    """
+    {
+        low_date:"2021-03-10"
+        high_date:"2021-04-10"
+    }
+    """
+    req_low_date = request.query_params.get('low_date')
+    req_high_date = request.query_params.get('high_date')
+
+    result = PurchaseHistory.objects \
+             .list_purchase_count_amount(
+             req_low_date, req_high_date)
+
+    return Response({
+        "result": result,
+        "request_data": request.query_params
+    })
+
+# GET, POST bookstorename, bookname, bookprice, username
+@api_view(['GET', 'POST'])
+def list_bsname_bookname_bookprice_username(request, pk):
+    user = User.objects.get(id=pk)
+    if request.method == 'GET':
+        serializer = UpdateSerializer(user)
+
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = UpdateSerializer(user, data=request.data, partial=True)
+        
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+
+
+@api_view(['GET'])
+def find_popular_bookstore(request):
+    from django.db.models import Count, Sum
+
+    result = BookStore.objects.values('name').annotate(
+               amount_count=Count('book__price'),total_price=Sum('book__price')
+               ).latest('amount_count', 'total_price')
+    
+    return Response(result)
+
+
+@api_view(['GET'])
+@req_keys_check(keys=["amount", "compare", "low_date", "high_date"])
+@req_params_in_key_check(params={"compare": ["larger", "smaller"]})
+def find_date_range_user_total(request):
+    """
+    {
+        amount: 10,
+        compare: larger,
+        low_date: "2020-02-10",
+        high_date: "2020-04-27",
+    }
+    """
+    req_amount = request.query_params.get('amount')
+    req_compare = request.query_params.get('compare')
+    req_low_date = request.query_params.get('low_date')
+    req_high_date = request.query_params.get('high_date')
+
+    result = User.objects.list_date_range_user_total(
+             req_amount, req_compare, req_low_date, req_high_date
+             )
+
+    return Response({
+        "result": result,
         "request_data": request.query_params
     })
