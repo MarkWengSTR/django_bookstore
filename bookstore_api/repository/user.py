@@ -17,35 +17,25 @@ class UserManager(models.Manager):
 
         return list(user_amount_limit)
 
-
-    def list_date_range_user_total(self,req_amount, req_compare, req_low_date, req_high_date):
+    def list_date_range_user_total(self, req_amount, req_compare, req_low_date, req_high_date):
         from bookstore_api.models import User
 
-        req_amount = int(req_amount) 
+        req_amount = int(req_amount)
 
         # user_amount_compare_amount
         if req_compare == 'larger':
-            date_range_user_amount = User.objects.filter(
-                    purchasehistory__transaction_date__range=[
-                    req_low_date, req_high_date], purchasehistory__transaction_amount__gte = req_amount
-                    ).values('name','purchasehistory__transaction_amount')
+            username_and_amount_in_date_range = User.objects.filter(
+                purchasehistory__transaction_date__range=[
+                    req_low_date, req_high_date], purchasehistory__transaction_amount__gte=req_amount
+            ).values('name', 'purchasehistory__transaction_amount').order_by('name')
 
         else:
-            date_range_user_amount = User.objects.filter(
-                    purchasehistory__transaction_date__range=[
-                    req_low_date, req_high_date], purchasehistory__transaction_amount__lte = req_amount
-                    ).values('name','purchasehistory__transaction_amount')
+            username_and_amount_in_date_range = User.objects.filter(
+                purchasehistory__transaction_date__range=[
+                    req_low_date, req_high_date], purchasehistory__transaction_amount__lte=req_amount
+            ).values('name', 'purchasehistory__transaction_amount').order_by('name')
 
-        # user_count_distinct
-        date_range_user_count = date_range_user_amount.distinct('name').count()
-
-        # return {"user_count":  ,"purchase":[]}
-        date_range_user_amount = list(map(lambda amount: amount, \
-                    date_range_user_amount.order_by('name').distinct()
-                                        )
-                    )
-
-        user_count = {"user_count": date_range_user_count}
-        user_amount = {"user_amount": date_range_user_amount}
+        user_count = {"user_count": username_and_amount_in_date_range.distinct('name').count()}
+        user_amount = {"user_amount": username_and_amount_in_date_range}
 
         return {**user_count, **user_amount}
