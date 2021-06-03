@@ -337,6 +337,7 @@ def find_date_range_user_total(request):
 
 # transaction
 @api_view(["POST"])
+@req_keys_check(keys=["user", "book"])
 def find_user_purchase_process(request):
 
     data = json.loads(request.body)
