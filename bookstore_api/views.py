@@ -5,6 +5,10 @@ from bookstore_api.utils.time import add_12_afternoon
 from bookstore_api.models import BookStore, Book, User, PurchaseHistory
 from bookstore_api.decorators.request import req_keys_check, req_params_in_key_check
 from bookstore_api.serializers.serializer import UpdateSerializer
+from bookstore_api.transaction import User_Purchase
+from django.db import transaction
+from datetime import datetime
+import json
 # Create your views here.
 
 
@@ -324,6 +328,22 @@ def find_date_range_user_total(request):
     result = User.objects.list_date_range_user_total(
              req_amount, req_compare, req_low_date, req_high_date
              )
+
+    return Response({
+        "result": result,
+        "request_data": request.query_params
+    })
+
+
+# transaction
+@api_view(["POST"])
+def find_user_purchase_process(request):
+
+    data = json.loads(request.body)
+    user = data['user']
+    book = data['book']
+
+    result = User_Purchase(user, book)
 
     return Response({
         "result": result,

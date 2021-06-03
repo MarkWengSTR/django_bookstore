@@ -25,4 +25,5 @@ urlpatterns = [
             name="list_bsname_bookname_bookprice_username"),
     path('find_popular_bookstore/', views.find_popular_bookstore, name="find_popular_bookstore"),
     path('find_date_range_user_total/', views.find_date_range_user_total, name="find_date_range_user_total"),
+    path('find_user_purchase_process/', views.find_user_purchase_process, name="find_user_purchase_process"),
 ]
