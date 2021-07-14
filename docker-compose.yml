@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: python src/manage.py runserver 0.0.0.0:8080
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=bookstore
+      - POSTGRES_USER=testuser
+      - POSTGRES_PASSWORD=0000
+    ports:
+      - 5432
