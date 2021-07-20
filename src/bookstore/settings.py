@@ -86,10 +86,8 @@ DATABASES = {
         'NAME': 'bookstore',
         'USER': 'testuser',
         'PASSWORD': '0000',
-        'HOST': 'localhost',
-#'HOST': 'db',
-#'PORT': '5432',
-        'PORT': '',
+        'HOST': 'db',
+        'PORT': '5432',
         'ATOMIC_REQUESTS': True,
     }
 }

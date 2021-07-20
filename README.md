@@ -58,7 +58,7 @@ It'd be great if you can deploy this on the free tier of any cloud hosting platf
 Then, open (Site Domain):8000
 
 # Docker setup
-* install docker (sudo apt install docker.io and https://docs.docker.com/compose/install/ )
-* sudo docker-compose build (not require)
+* install docker (sudo apt install docker.io)
+* sudo docker-compose build
 * sudo docker-compose run web python src/manage.py migrate
 * sudo docker-compose up
