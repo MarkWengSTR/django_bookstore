@@ -26,8 +26,9 @@ SECRET_KEY = 'django-insecure-v&*dfjiyq(n13*vib^ue4m%o0u@$5fqu$+=6z9m24kb2^mnkx_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['140.110.26.92']
-ALLOWED_HOSTS = ['140.110.26.221']
+#ALLOWED_HOSTS = ['140.110.26.92']
+#ALLOWED_HOSTS = ['140.110.26.221']
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.postgres',
     'bookstore_api',
     'rest_framework',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -84,8 +86,10 @@ DATABASES = {
         'NAME': 'bookstore',
         'USER': 'testuser',
         'PASSWORD': '0000',
-        'HOST': 'db',
-        'PORT': '5432',
+        'HOST': 'localhost',
+#'HOST': 'db',
+#'PORT': '5432',
+        'PORT': '',
         'ATOMIC_REQUESTS': True,
     }
 }
@@ -135,6 +139,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# DATETIME_INPUT_FORMATS
-#DATETIME_INPUT_FORMATS = ['%Y-%m-%d %H:%M']
