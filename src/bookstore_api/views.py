@@ -1,5 +1,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 
 from bookstore_api.utils.time import add_12_afternoon
 from bookstore_api.models import BookStore, Book, User, PurchaseHistory
@@ -12,6 +14,7 @@ import json
 # Create your views here.
 
 
+@swagger_auto_schema(methods=['get'], operation_summary="GET Hello")
 @api_view(['GET'])
 def show_index(request):
     return Response({
@@ -19,6 +22,10 @@ def show_index(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List book stores open at a certain datetime"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["hour", "min", "noon"])
 @req_params_in_key_check(params={"noon": ["am", "pm"]})
@@ -48,6 +55,11 @@ def find_store_open_at(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List all book stores open on a day of the week, \
+        at a certain datetime"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["hour", "min", "noon", "weekday"])
 @req_params_in_key_check(params={
@@ -83,6 +95,11 @@ def find_store_open_weekday_at(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List all book stores for more or less than x hours \
+        per day or week"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["weekday", "hours", "compare"])
 @req_params_in_key_check(params={"compare": ["larger", "smaller"]})
@@ -117,6 +134,11 @@ def find_store_with_open_hour(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List all books that are within a price range,\
+        sorted by price or alphabetically" 
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["low_price", "high_price", "sort"])
 @req_params_in_key_check(params={"sort": ["name", "price"]})
@@ -146,6 +168,11 @@ def find_books_in_price_range(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List all book stores that have more or less \
+        than x number of books"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["num", "compare"])
 @req_params_in_key_check(params={"compare": ["larger", "smaller"]})
@@ -172,6 +199,11 @@ def find_bookstore_have_num_of_books(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary= "List all book stores that have more or less \
+        than x number of books within a price range"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["name", "compare", "low_price", "high_price"])
 @req_params_in_key_check(params={"compare": ["larger", "smaller"]})
@@ -203,6 +235,10 @@ def find_bs_have_num_of_books_price_range(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="Search for book stores or books by name, ranked by relevance to search term"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["name", "book_or_store"])
 @req_params_in_key_check(params={"book_or_store": ["book", "store"]})
@@ -233,6 +269,10 @@ def search_b_bs_by_name(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List The top x users by total transaction amount within a date range"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["num", "low_date", "high_date"])
 def find_user_date_range_amount(request):
@@ -259,6 +299,10 @@ def find_user_date_range_amount(request):
     })
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List The total number and dollar value of transactions that happened within a date range"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["low_date", "high_date"])
 def find_purchase_count_amount(request):
@@ -280,6 +324,8 @@ def find_purchase_count_amount(request):
         "request_data": request.query_params
     })
 
+@swagger_auto_schema(method ='get', operation_summary="List The total number and dollar value of transactions that happened within a date range")
+@swagger_auto_schema(method='post',operation_summary="Edit book store name, book name, book price and user name")
 # GET, POST bookstorename, bookname, bookprice, username
 @api_view(['GET', 'POST'])
 def list_bsname_bookname_bookprice_username(request, pk):
@@ -297,6 +343,10 @@ def list_bsname_bookname_bookprice_username(request, pk):
             return Response(serializer.data)
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List The most popular book stores by transaction volume, either by number of transactions or transaction dollar value"
+        )
 @api_view(['GET'])
 def find_popular_bookstore(request):
     from django.db.models import Count, Sum
@@ -308,6 +358,10 @@ def find_popular_bookstore(request):
     return Response(result)
 
 
+@swagger_auto_schema(
+        methods=['get'], 
+        operation_summary="List Total number of users who made transactions above or below $v within a date range"
+        )
 @api_view(['GET'])
 @req_keys_check(keys=["amount", "compare", "low_date", "high_date"])
 @req_params_in_key_check(params={"compare": ["larger", "smaller"]})
@@ -336,6 +390,10 @@ def find_date_range_user_total(request):
 
 
 # transaction
+@swagger_auto_schema(
+        methods=['post'], 
+        operation_summary="Process a user purchasing a book from a book store, handling all relevant data changes in an atomic transaction"
+        )
 @api_view(["POST"])
 @req_keys_check(keys=["user", "book"])
 def find_user_purchase_process(request):
