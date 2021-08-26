@@ -31,7 +31,8 @@ Then, open (Site Domain):8000
 # Deploy by heroku
 https://fierce-shelf-22652.herokuapp.com/bsname_bookname_bookprice_username/list/0/
 # API doc
-![圖片](https://user-images.githubusercontent.com/32931993/130921992-12d3f4ea-ba80-4feb-a46b-2950ca37c6df.png)
+![圖片](https://user-images.githubusercontent.com/32931993/130922866-ab335886-79ad-45af-87ed-539fce85654f.png)
+
 
 # The Task
 The task is to build an API server, with documentation and a backing relational database that will allow a frontend client to navigate through that sea of data easily, and intuitively. The frontend team will later use that documentation to build the frontend clients.
