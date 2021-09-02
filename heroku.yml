@@ -1,4 +1,4 @@
-web: gunicorn --pythonpath bookstore bookstore.wsgi --log-file -
+web: gunicorn --pythonpath mysite mysite.wsgi --log-file -
 
 #setup:
 #  addons:
