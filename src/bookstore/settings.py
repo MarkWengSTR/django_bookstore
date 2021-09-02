@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-v&*dfjiyq(n13*vib^ue4m%o0u@$5fqu$+=6z9m24kb2^mnkx_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['140.110.26.92']
+#ALLOWED_HOSTS = ['140.110.26.92']
 #ALLOWED_HOSTS = ['140.110.26.221']
-#ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,11 +86,13 @@ DATABASES = {
         'NAME': 'bookstore',
         'USER': 'testuser',
         'PASSWORD': '0000',
+# Docker
 #'HOST': 'db',
 #'PORT': '5432',
         'ATOMIC_REQUESTS': True,
-        'HOST': 'localhost',
-        'PORT': '',
+# heroku
+        'HOST': '140.110.26.92',
+        'PORT': '6122',
     }
 }
 
