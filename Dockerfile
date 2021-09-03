@@ -1,7 +1,7 @@
 FROM python:3-alpine
 
 ENV PYTHONUNBUFFERED 1
-
+USER root
 RUN mkdir /app
 
 WORKDIR /app
@@ -14,4 +14,5 @@ RUN \
  python3 -m pip install -r requirements.txt --no-cache-dir && \
  apk --purge del .build-deps
 
- EXPOSE 5432
+EXPOSE 5432
+ENTRYPOINT CMD
