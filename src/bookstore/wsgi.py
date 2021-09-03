@@ -11,8 +11,8 @@ import os
 import sys
 from django.core.wsgi import get_wsgi_application
 from dj_static import Cling
-#sys.path.append('/home/ubuntu/bookstore/django_bookstore/django_bookstore/src')
 #sys.path.append('/home/ubuntu/bookstore/django_bookstore/django_bookstore/src/bookstore')
+sys.path.append('/home/ubuntu/bookstore/django_bookstore/django_bookstore/src')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bookstore.settings')
 
