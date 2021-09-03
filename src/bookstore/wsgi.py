@@ -8,11 +8,10 @@ https://docs.djangoproject.com/en/3.2/howto/deployment/wsgi/
 """
 
 import os
+import sys
 from django.core.wsgi import get_wsgi_application
 from dj_static import Cling
-path = '/home/ubuntu/bookstore/django_bookstore/django_bookstore/src/bookstore'
-if path no in sys.path:
-    sys.path.append(path)
+sys.path.append('/home/ubuntu/bookstore/django_bookstore/django_bookstore/src')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bookstore.settings')
 
