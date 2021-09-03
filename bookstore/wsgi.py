@@ -16,5 +16,5 @@ sys.path.append('/home/ubuntu/bookstore/django_bookstore/django_bookstore/src')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bookstore.settings')
 
-#application = get_wsgi_application()
-application = Cling(get_wsgi_application())
+application = get_wsgi_application()
+#application = Cling(get_wsgi_application())
