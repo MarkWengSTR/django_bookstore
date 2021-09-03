@@ -1,2 +1,7 @@
 **__pycache__/
 *.py[cod]
+db.sqlite3
+Include
+Lib
+Scripts
+tcl
